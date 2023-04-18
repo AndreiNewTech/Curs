@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <div>
+            <label for="fnume">Nume</label>
+            <input type="text" name="fnume" id="fnume" value="" placeholder="Nume" required>
+        </div>
+        <br>
+        <div>
+            <label for="fprenume">Prenume:</label>
+            <input type="text" name="fprenume" id="fprenume" value="" placeholder="Prenume" required>
+        </div>
+        <br>
+        <div>
+            <label for="femail">Email:</label>
+            <input type="email" name="femail" id="femail" readonly="true" value="andrei@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="fpassword">Parola:</label>
+            <input type="password" name="fpassword" id="fpassword" maxlength="10">
+        </div>
+        <br>
+        <div>
+            <label for="fvarsta">Varsta:</label>
+            <input type="number" name="fvarsta" id="fvarsta" max="100" min="1">
+        </div>
+
+        <br>
+        <div>
+            <label for="fbirthday">Zi de nastere</label>
+            <input type="date" name="fbirthday" id="fbirthday" readonly value="1990-06-01">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="fmajor">Major</label>
+            <input type="checkbox" name="fmajor" id="fmajor" value="major" checked >
+        </div>
+        <br>
+        <div>
+            <p>Stare civila:</p>
+            <label for="fcasatorit">Casatorit</label>
+            <input type="radio" name="fstareCivilia" id="fcasatorit" value="casatorit">
+            <label for="fnecasatorit">Necasatorit</label>
+            <input type="radio" name="fstareCivilia" id="fnecasatorit" value="necasatorit">
+        </div>
+
+        <br>
+        <div>
+            <label for="fdescriere"></label>
+            <textarea name="fdescriere" id="fdescriere" cols="30" rows="10">O scurta descriere despre mine</textarea>
+        </div>
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    
+</body>
+</html>
