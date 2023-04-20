@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="">
+    <form action=""  method="GET" style="border: 2px solid black; padding: 20px">
         <div>
             <label for="fnume">Nume</label>
             <input type="text" name="fnume" id="fnume" value="" placeholder="Nume" required>
@@ -61,10 +61,61 @@
             <textarea name="fdescriere" id="fdescriere" cols="30" rows="10">O scurta descriere despre mine</textarea>
         </div>
         <br>
+        
+        <div>
+            <label for="fprofesie">Profesie</label>
+            <select name="fprofesie" id="fprofesie">
+                <option disabled value></option>
+                <option value="economist">Economist</option>
+                <option value="programator">Programator</option>
+                <option selected value="Baschetbalist">Baschetbalist</option>
+            </select>
+        </div>
 
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <br>
+        <div>
+            <label for="fpoza">Poza</label>
+            <input type="file" name="fpoza" id="fpoza">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+
+        <!-- Continuare lectie 20.04.2023 -->
     </form>
-    
+
+    <br>
+    <form action="">
+
+        <fieldset>
+            <legend>Fieldset Exemplu</legend>
+            <div>
+                <label for="fnume">Nume</label>
+                <input type="text" name="fnume" id="fnume" value="" placeholder="Nume" required>
+            </div>
+            <br>
+            <div>
+                <label for="fprenume">Prenume:</label>
+                <input type="text" name="fprenume" id="fprenume" value="" placeholder="Prenume" required>
+            </div>
+        </fieldset>
+
+        <!-- Culoare -->
+        <input type="color" name="" id="">
+        <input type="search" name="" id="">
+
+    </form>
+
+    <br>
+
+    <!-- Buton general -->
+    <div>
+        <button>My button</button>
+    </div>
 </body>
 </html>
