@@ -1,0 +1,124 @@
+
+/* Selectors */
+ 
+/* Tag selectors */
+
+/* css - casacding style sheet */
+:root {
+    
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(42, 0, 104);
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+
+/* Class si id selectors */
+
+.titlu-produs {
+    text-align: left;
+}
+
+.subtitlu {
+    text-decoration: underline;
+}
+
+
+#id-titlu {
+    text-decoration: underline;
+}
+
+
+.highlight {
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(143, 0, 0);
+}
+
+/* Combinators */
+
+.produse-discount .highlight {
+    color: green;
+}
+
+
+.produse span span {
+    font-size: 20px;
+}
+
+/* Pseudo-classes selectors */
+
+/* 
+    :first-child
+    :last-child
+    :nth-child(n)
+
+    :hover
+    :active
+    :link
+    :visited
+
+*/
+
+.produse div, .produse-discount div:first-child {
+    /* short-hand notation */
+    border: 1px solid;
+    margin-bottom: 20px;
+    /* border-width: 1px;
+    border-style: solid; */
+    /* border-color: red; */
+}
+
+
+button {
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+
+.produse .button-container {
+    border: none;
+    margin-bottom: 0;
+}
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color:rgb(143, 0, 0);
+}
+
+a:hover {
+    color: blue;
+}
+
+
+

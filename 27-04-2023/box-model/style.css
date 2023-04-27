@@ -1,0 +1,56 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Unitati
+ absolut: px pt 
+
+ relativi: %, rem, em
+
+*/
+
+body {
+
+}
+
+/*  Box Model  */
+
+div {
+    width: 300px;
+    height: 100px;
+
+    /* 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px; */
+
+    margin: 15px 20px;
+
+    /* Short-hand notation */
+    margin: 10px;
+ 
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: rgb(81, 86, 92); */
+    border-radius: 10px;
+    border: 5px solid rgb(81, 86, 92);
+
+
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+
+    /* Short-hand notation */
+    padding: 10px 10px;
+}
+
+
+
+
