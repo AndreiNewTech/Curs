@@ -1,0 +1,63 @@
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 8px;
+}
+
+.logo-image {
+  width: 70px;
+}
+
+.logo-text {
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Nav */
+.nav-container {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 10px;
+}
+
+/* Banner */
+
+.banner-container {
+  background-color:#fceeea;
+  padding: 20px;
+  /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--2BFtyUZR6OXcYqKWfsk2JjlDVTmugel5g&usqp=CAU'); */
+/*   
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 10px; */
+  background: linear-gradient(#fceeea, rgb(255, 255, 255));
+}
+
+.banner-title {
+  text-align: center;
+}
+
+.banner-subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.banner-text {
+  text-align: center;
+  font-size: 1;
+  height: 80px;
+  overflow: hidden;
+}
