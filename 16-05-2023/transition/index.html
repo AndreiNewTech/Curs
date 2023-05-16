@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition</title>
+</head>
+<body>
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .transition-transform {
+      padding: 50px;
+      margin-top: 100px;
+    }
+    .transition-transform div {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+    }
+
+    .transition-transform div:nth-child(1) {
+      background-color: azure;
+      margin-bottom: 100px;
+      transform: scale(1.5);
+    }
+    .transition-transform div:nth-child(2) {
+      background-color: rgb(240, 255, 247);
+      margin-bottom: 50px;
+      transform: rotateY(50deg);
+    }
+
+    .transition-transform div:nth-child(3) {
+      background-color: rgb(242, 240, 255);
+      transform: translate(100%, 50%);
+    }
+
+    .transition-transform div:nth-child(4) {
+      background-color: rgb(255, 240, 240);
+      transform: skew(160deg);
+    }
+
+    .parent-centering {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      position: relative;
+    }
+    .child {
+      width: 100px;
+      height: 100px;
+      background-color: blanchedalmond;
+      /* transition-property: width;
+      transition-duration: 2s;
+      transition-delay: 1s;
+      transition-timing-function: ease-out;  */
+      transition: width 2s ease-in 1s, height 1s ease-in 1s;
+    }
+
+    .child:hover {
+      cursor: pointer;
+      background: red;
+      width: 500px;
+      height: 500px;
+      /* height: 200px; */
+    }
+  </style>
+  <main>
+
+    <section class="transition-basics">
+      <h1>Transform basics</h1>
+      <div class="child"></div>
+    </section>
+
+    <section class="transition-transform">
+      <div class="scale">Scale</div>
+      <div class="rotate">Rotate</div>
+      <div class="translate">Translate</div>
+      <div class="skew">Skew</div>
+    </section>
+
+  </main>
+  
+</body>
+</html>
