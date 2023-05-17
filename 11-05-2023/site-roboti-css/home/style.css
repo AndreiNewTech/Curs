@@ -36,12 +36,6 @@
 .banner-container {
   background-color:#fceeea;
   padding: 20px;
-  /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--2BFtyUZR6OXcYqKWfsk2JjlDVTmugel5g&usqp=CAU'); */
-/*   
-  background-size: 120px;
-  background-repeat: no-repeat;
-  background-position-x: 10px;
-  background-position-y: 10px; */
   background: linear-gradient(#fceeea, rgb(255, 255, 255));
 }
 
@@ -60,4 +54,38 @@
   font-size: 1;
   height: 80px;
   overflow: hidden;
+}
+
+/* Products */
+.products {
+
+}
+
+.products-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid rgba(0,0,0,0.1);
+  flex: 0 1 270px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-title {
+  height: 120px;
+}
+
+
+.product-image {
+  width: 200px;
 }
