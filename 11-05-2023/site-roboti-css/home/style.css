@@ -1,3 +1,18 @@
+
+.section-title {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-general {
+  margin-bottom: 70px;
+}
+
+.page-header { 
+  margin-bottom: 70px;
+}
+
 /* Logo */
 .logo-container {
   display: flex;
@@ -17,7 +32,6 @@
 
 /* Nav */
 .nav-container {
-  background-color: aliceblue;
   display: flex;
   justify-content: space-between;
 }
@@ -36,16 +50,19 @@
 .banner-container {
   background-color:#fceeea;
   padding: 20px;
-  background: linear-gradient(#fceeea, rgb(255, 255, 255));
+  background: linear-gradient(to right , #ffafbd, #ffc3a0)
 }
 
 .banner-title {
   text-align: center;
+  font-family: 'Slabo 27px', serif;
+  font-size: 60px;
 }
 
 .banner-subtitle {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 36px;
   font-weight: 100;
 }
 
@@ -54,6 +71,8 @@
   font-size: 1;
   height: 80px;
   overflow: hidden;
+  width: 70%;
+  margin: auto;
 }
 
 /* Products */
@@ -74,18 +93,120 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  position: relative;
+  border-radius: 10px;
 }
 
 .product-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;;
 }
 
 .product-title {
   height: 120px;
+  font-weight: 400;
 }
-
 
 .product-image {
   width: 200px;
+  margin-bottom: 10px;
+}
+
+.product-label {
+  background-color: rgb(234, 222, 0);
+  padding: 5px;
+  position: absolute;
+  color: white;
+  border-radius: 10px;
+  top: 10px;
+  left: 10px;
+}
+
+.product-button { 
+  background: rgb(255, 134, 134);
+  width: 75px;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  transition: background-color .1s ease-in;
+}
+
+.product-button:hover {
+  cursor: pointer;
+  background-color: rgb(235, 134, 134);
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;;
+}
+
+
+/* Comanda */
+
+.comanda {
+  background:linear-gradient(to right, #a1c4fd, #c2e9fb), url('https://www.usnews.com/cmsmedia/54/f7/4cec45bc41089966939e64a48f2f/robot.jpg');;
+  padding: 20px;
+}
+
+.comanda-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comanda-imagine {
+  width: 60%;
+  max-width: 300px;
+}
+
+.comanda-text {
+  font-weight: 200;
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.comanda-button {
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  background: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color .2s ease-in, box-shadow .2s ease;
+}
+
+.comanda-button:hover {
+  cursor: pointer;
+  background-color: rgb(231, 231, 231);
+  /* color: white; */
+}
+
+
+/* Colaboratori */
+
+.colaboratori-content {
+  display: flex;
+}
+
+.colaboratori-logo {
+  width: 170px;
+}
+
+/* Footer */
+
+.page-footer {
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-footer .logo-container {
+  margin-bottom: 20px;;
 }
