@@ -31,7 +31,7 @@
 }
 
 /* Nav */
-.nav-container {
+.nav-content {
   display: flex;
   justify-content: space-between;
 }
@@ -39,10 +39,7 @@
 .nav-list {
   display: flex;
   align-items: center;
-}
-
-.nav-list li {
-  margin: 10px;
+  gap: 20px;
 }
 
 /* Banner */
@@ -68,7 +65,7 @@
 
 .banner-text {
   text-align: center;
-  font-size: 1;
+  font-size: 18px;
   height: 80px;
   overflow: hidden;
   width: 70%;
@@ -77,10 +74,14 @@
 
 /* Products */
 .products {
-
 }
 
 .products-content {
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 16px;
+}
+
+.products-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -89,7 +90,7 @@
 
 .product-card {
   border: 1px solid rgba(0,0,0,0.1);
-  flex: 0 1 270px;
+  flex: 1 1 250px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -105,6 +106,7 @@
 
 .product-title {
   height: 120px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -147,11 +149,14 @@
 /* Comanda */
 
 .comanda {
-  background:linear-gradient(to right, #a1c4fd, #c2e9fb), url('https://www.usnews.com/cmsmedia/54/f7/4cec45bc41089966939e64a48f2f/robot.jpg');;
-  padding: 20px;
+  background:linear-gradient(to right, #a1c4fd, #c2e9fb), url('https://www.usnews.com/cmsmedia/54/f7/4cec45bc41089966939e64a48f2f/robot.jpg');
 }
 
 .comanda-content {
+  padding: 20px 16px;
+}
+
+.comanda-sides {
   display: flex;
   justify-content: space-between;
 }
@@ -190,7 +195,14 @@
 /* Colaboratori */
 
 .colaboratori-content {
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 16px;
+}
+
+.logos-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .colaboratori-logo {
@@ -200,7 +212,7 @@
 /* Footer */
 
 .page-footer {
-  background: lightgrey;
+  background: #f1f1f1;
   display: flex;
   flex-direction: column;
   align-items: center;
