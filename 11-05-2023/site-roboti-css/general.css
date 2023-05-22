@@ -16,6 +16,13 @@ body {
   margin: auto;
 }
 
+.text-size-18 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
 li {
   list-style: none;
 }
@@ -27,7 +34,7 @@ a {
 
 /* unvisited link */
 a:link {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 /* visited link */
@@ -42,5 +49,5 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: #0000FF;
+  color: #0000ff;
 }

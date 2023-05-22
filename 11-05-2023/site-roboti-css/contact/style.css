@@ -1,0 +1,59 @@
+.form-content {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 50px;
+}
+
+.form-style {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-style div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-style div select {
+  height: 30px;
+}
+
+.form-style div textarea {
+  transition: ease-in-out 0.5s;
+}
+
+.form-style div textarea:focus {
+  transition: ease-in-out 0.5s;
+  transform: scaleX(1.02);
+}
+
+.form-input {
+  height: 30px;
+  transition: ease-in-out 0.5s;
+}
+
+.form-input:focus {
+  transition: ease-in-out 0.5s;
+  scale: 1.02;
+}
+
+.form-button {
+  height: 40px;
+  border: none;
+  margin: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  width: 500px;
+}
+
+.form-button:hover {
+  transition: ease-in-out 0.5s;
+  width: 900px;
+  background-color: darkgray;
+  color: white;
+  box-shadow: 3px 3px black;
+}
