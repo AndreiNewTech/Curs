@@ -4,6 +4,7 @@
   height: 200px;
   background-color: rgb(211, 255, 54);
 }
+
 @media screen and (max-width: 500px) {
   .media-parent1 {
     background-color: rgb(225, 201, 65);
