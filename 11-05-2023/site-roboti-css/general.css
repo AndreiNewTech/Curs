@@ -20,6 +20,14 @@ body {
   letter-spacing: 0.5px;
 }
 
+h1 {
+  line-height: 60px;
+}
+
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -105,3 +113,48 @@ a:active {
   margin-bottom: 20px;
 }
 
+
+@media screen and (max-width: 576px) {
+
+  /* General */
+  .section-title {
+    text-align: center;
+  }
+
+  /* Navigation */
+  .logo-container {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-list li {
+    padding: 5px;
+  }
+  .nav-list li:first-child {
+    padding-top: 10px;
+  }
+
+  .nav-content {
+    margin: 0px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px
+  }
+
+  /* Footer */
+  .page-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

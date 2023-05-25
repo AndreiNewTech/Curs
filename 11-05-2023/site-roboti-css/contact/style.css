@@ -19,6 +19,7 @@
 
 .form-style div select {
   height: 30px;
+  padding: 0 10px;
 }
 
 .form-style div textarea {
@@ -33,6 +34,7 @@
 .form-input {
   height: 30px;
   transition: ease-in-out 0.5s;
+  padding-left: 10px;
 }
 
 .form-input:focus {
@@ -56,4 +58,22 @@
   background-color: darkgray;
   color: white;
   box-shadow: 3px 3px black;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+  .form-input {
+    height: 40px;
+  }
+
+  .form-style div select {
+    height: 40px;
+  }
+
+  .form-button {
+    width: 80%;
+    max-width: 400px;
+  }
 }

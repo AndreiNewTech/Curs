@@ -185,37 +185,6 @@
 
 @media screen and (max-width: 576px) {
 
-  /* General */
-
-  .section-title {
-    text-align: center;
-  }
-
-  /* Navigation */
-  .logo-container {
-    display: none;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .nav-list li {
-    padding: 5px;
-  }
-  .nav-list li:first-child {
-    padding-top: 10px;
-  }
-
-  .nav-content {
-    margin: 0px;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 20px
-  }
-
-
   /* Banner */
   .banner-text {
     height: 100%;
@@ -223,8 +192,6 @@
 
 
   /* Products */
-
-
   .product-card {
     align-items: center;
   }
@@ -259,4 +226,27 @@
     height: inherit;
   }
  
+  /* Comanda */
+  .comanda-sides {
+    flex-direction: column-reverse;
+  }
+
+  .comanda-text {
+    text-align: center;
+  }
+
+  .comanda-button {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+
+  .right-side {
+    text-align: center;
+  }
+
+  .comanda-imagine {
+    width: 50%;
+    max-width: 120px;
+  }
 }
