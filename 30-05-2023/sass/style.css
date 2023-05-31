@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(39, 39, 39);
+  padding: 10px;
+  border-radius: 10px;
+}
+.card__title {
+  margin-bottom: 0;
+  text-align: center;
+  color: rgb(94, 94, 94);
+}
+.card__content {
+  border-bottom: 2px solid rgb(39, 39, 39);
+  margin-bottom: 20px;
+}
+.card__button {
+  padding: 8px;
+  background-color: aliceblue;
+}/*# sourceMappingURL=style.css.map */

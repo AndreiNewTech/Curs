@@ -1,0 +1,28 @@
+
+@use 'general';
+@import 'colors';
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $gray-dark;
+  padding: 10px;
+  border-radius: 10px;
+
+  &__title {
+    margin-bottom: 0;
+    text-align: center;
+    color: $gray-light;
+  }
+
+  &__content {
+    border-bottom: 2px solid $gray-dark;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    padding: 8px;
+    background-color: aliceblue;
+  }
+}
