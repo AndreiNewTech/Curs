@@ -8,11 +8,17 @@ body {
   margin: auto;
 }
 
+.generic-button, .card__button {
+  background: none;
+  border: 1px solid black;
+  padding: 16px;
+}
+
 .card {
   width: 300px;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(39, 39, 39);
+  border: 1px solid rgb(49, 49, 49);
   padding: 10px;
   border-radius: 10px;
 }
@@ -22,10 +28,20 @@ body {
   color: rgb(94, 94, 94);
 }
 .card__content {
-  border-bottom: 2px solid rgb(39, 39, 39);
+  border-bottom: 1px solid rgb(49, 49, 49);
   margin-bottom: 20px;
 }
+.card__description {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(0, 32, 121);
+}
+.card__author {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 0, 179);
+  font-style: italic;
+}
 .card__button {
-  padding: 8px;
-  background-color: aliceblue;
+  color: red;
 }/*# sourceMappingURL=style.css.map */

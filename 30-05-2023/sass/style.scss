@@ -1,6 +1,13 @@
 
 @use 'general';
 @import 'colors';
+@import 'mixins';
+
+.generic-button {
+  background: none;
+  border: 1px solid black;
+  padding: 16px;
+}
 
 .card {
   width: 300px;
@@ -12,17 +19,27 @@
 
   &__title {
     margin-bottom: 0;
-    text-align: center;
+    text-align: center;;
     color: $gray-light;
   }
 
   &__content {
-    border-bottom: 2px solid $gray-dark;
+    border-bottom: 1px solid $gray-dark;
     margin-bottom: 20px;
   }
 
-  &__button {
-    padding: 8px;
-    background-color: aliceblue;
+  &__description {
+    @include card-text($font-size: 24px);
   }
+
+  &__author {
+    @include card-text($text-color: $pink-color);
+    font-style: italic;
+  }
+
+  &__button {
+    @extend .generic-button;
+    color: red;
+  }
+
 }
