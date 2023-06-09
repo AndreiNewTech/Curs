@@ -1,2 +1,80 @@
 
-@use '../../styles/general';
+@import '../../styles/variables';
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    padding-left: 123px;
+    padding-right: 165px;
+    gap: 40px;
+  }
+
+  &__right {
+    width: 70%;
+    backdrop-filter: blur(25px);
+    display: flex;
+    align-items: center;
+  }
+
+  &__line {
+    width: 45%;
+    position: absolute;
+    left: -28%;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  &__item {
+    padding-top: 39px;
+    padding-bottom: 38px;
+    &:hover {
+      border-bottom: 2px solid white;
+      margin-bottom: -2px;
+    }
+
+    &-number {
+      font-weight: 700;
+    }
+  }
+
+}
+
+.content-container {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  .homepage-content {
+    max-width: 458px ;
+
+    &__title {
+      margin: 24px 0; 
+      line-height: 1;
+    }
+    &__description {
+      line-height: 32px;
+    }
+  }
+
+  .homepage-button  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 274px;
+      height: 274px;
+      border-radius: 50%;
+    }
+
+    h4 {
+      color: $blue-dark;
+    }
+
+  }
+}
