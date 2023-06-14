@@ -1,0 +1,59 @@
+body {
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+}
+
+.page-title {
+  letter-spacing: 3px;
+  margin-bottom: 100px;
+}
+.page-title span {
+  font-weight: bold;
+  opacity: 0.25;
+  margin-right: 20px;
+}
+
+.sub-nav__list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.sub-nav__item {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.sub-nav__item-link:link, .sub-nav__item-link:visited {
+  color: #D0D6F9;
+}
+.sub-nav__item--active {
+  border-bottom: 2px solid white;
+}
+.sub-nav__item--active .sub-nav__item-link {
+  color: white;
+}
+.sub-nav__item:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+.sub-nav__item--active:hover {
+  border-bottom: 2px solid white;
+}
+
+.destination__title {
+  margin-bottom: 20px;
+}
+.destination__content {
+  max-width: 475px;
+}
+.destination__description {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 16px;
+}
+.destination__content-footer {
+  display: flex;
+}
+.destination__content-footer .left-content, .destination__content-footer .right-content {
+  width: 50%;
+}
+.destination__content-footer .sub-heading2 {
+  margin-bottom: 16px;
+}/*# sourceMappingURL=destination.css.map */

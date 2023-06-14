@@ -1,47 +1,6 @@
 
 @import '../../styles/variables';
 
-.navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  &__list {
-    display: flex;
-    padding-left: 123px;
-    padding-right: 165px;
-    gap: 40px;
-  }
-
-  &__right {
-    width: 70%;
-    backdrop-filter: blur(25px);
-    display: flex;
-    align-items: center;
-  }
-
-  &__line {
-    width: 45%;
-    position: absolute;
-    left: -28%;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-  }
-
-  &__item {
-    padding-top: 39px;
-    padding-bottom: 38px;
-    &:hover {
-      border-bottom: 2px solid white;
-      margin-bottom: -2px;
-    }
-
-    &-number {
-      font-weight: 700;
-    }
-  }
-
-}
 
 .content-container {
   margin-top: 200px;
@@ -65,6 +24,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 274px;
+      height: 274px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.2);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      transition: all .3s ease-in-out;
+    }
+
+    &:hover::before {
+      width: 450px;
+      height: 450px;
+    }
 
     button {
       width: 274px;

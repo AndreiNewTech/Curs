@@ -1,0 +1,75 @@
+@import '../../styles/variables';
+
+body {
+  background-image: url('../../assets/destination/background-destination-desktop.jpg');
+}
+
+.page-title {
+  letter-spacing: 3px;
+  margin-bottom: 100px;
+
+  span {
+    font-weight: bold;
+    opacity: 0.25;
+    margin-right: 20px;
+  }
+}
+
+.sub-nav {
+  &__list {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    &-link:link, &-link:visited {
+      color: $blue-light;
+    }
+
+    &--active {
+      border-bottom: 2px solid $white;
+      .sub-nav__item-link {
+        color: $white;
+      }
+    }
+  
+  }
+
+  &__item:hover  {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  &__item--active:hover {
+    border-bottom: 2px solid $white;
+  }
+
+
+}
+
+.destination {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    max-width: 475px;
+  }
+
+  &__description {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 16px;
+  }
+
+  &__content-footer {
+    display: flex;
+    .left-content, .right-content {
+      width: 50%;
+    }
+    .sub-heading2 {
+      margin-bottom: 16px;
+    }
+  }
+}
