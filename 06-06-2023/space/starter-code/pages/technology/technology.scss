@@ -1,0 +1,67 @@
+@import '../../styles/variables';
+body {
+  background-image: url('../../assets/technology/background-technology-desktop.jpg');
+}
+
+.page-title {
+  margin-bottom: 100px;
+}
+
+.technology {
+  &__image {
+    order: 2;
+    text-align: right;
+  }
+
+  &__content {
+    display: flex;
+    order: 1;
+    padding-top: 120px;
+    .aside-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+  
+      &__item {
+
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid rgba(255,255,255, 0.8);
+        border-color: rgba(255,255,255, 0.4);
+        font-size: $size-lg;
+        color: $white;
+        text-align: center;
+        margin-right: 80px;
+        transition: border-color .3 ease-in;
+        cursor: pointer;
+        &:hover {
+          border-color: $white;
+        }
+        a {
+          width: inherit;
+          height: inherit;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &--active {
+          background-color: $white;
+          a {
+            color: $blue-dark;
+
+          }
+   
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+}

@@ -46,5 +46,14 @@
   border-radius: 50%;
 }
 .content-container .homepage-button h4 {
+  width: inherit;
+  height: inherit;
+}
+.content-container .homepage-button h4 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
   color: #0B0D17;
 }/*# sourceMappingURL=homepage.css.map */

@@ -5,14 +5,7 @@ body {
 }
 
 .page-title {
-  letter-spacing: 3px;
   margin-bottom: 100px;
-
-  span {
-    font-weight: bold;
-    opacity: 0.25;
-    margin-right: 20px;
-  }
 }
 
 .sub-nav {
@@ -67,6 +60,9 @@ body {
     display: flex;
     .left-content, .right-content {
       width: 50%;
+    }
+    .sub-heading1 {
+      text-transform: uppercase;
     }
     .sub-heading2 {
       margin-bottom: 16px;

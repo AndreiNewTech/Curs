@@ -53,9 +53,17 @@
       height: 274px;
       border-radius: 50%;
     }
-
     h4 {
-      color: $blue-dark;
+      width: inherit;
+      height: inherit;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        color: $blue-dark;
+      }
     }
 
   }

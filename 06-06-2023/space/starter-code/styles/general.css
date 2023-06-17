@@ -16,10 +16,15 @@ h5 {
   color: #D0D6F9;
 }
 
+main {
+  padding-left: 100px;
+}
+
 body {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
+  margin-bottom: 0;
   background: #0B0D17;
   background-image: url("../assets/home/background-home-desktop.jpg");
   background-size: cover;
@@ -96,6 +101,15 @@ p {
 .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.page-title {
+  letter-spacing: 3px;
+}
+.page-title span {
+  font-weight: bold;
+  opacity: 0.25;
+  margin-right: 20px;
 }
 
 .navigation {

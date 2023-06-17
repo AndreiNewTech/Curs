@@ -1,0 +1,48 @@
+body {
+  background-image: url("../../assets/crew/background-crew-desktop.jpg");
+}
+
+.crew {
+  gap: 50px;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+.crew__image {
+  order: 2;
+  max-width: 400px;
+}
+.crew__content {
+  order: 1;
+  padding-top: 120px;
+}
+.crew__subtitle {
+  opacity: 0.35;
+  margin-bottom: 10px;
+}
+.crew__title {
+  margin-bottom: 30px;
+}
+.crew__description {
+  margin-bottom: 100px;
+  min-height: 100px;
+}
+.crew .sub-nav {
+  display: flex;
+  gap: 20px;
+}
+.crew .sub-nav__item {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.18;
+  transition: opacity 0.1s ease-in;
+  cursor: pointer;
+}
+.crew .sub-nav__item a {
+  width: inherit;
+  height: inherit;
+  display: inline-block;
+}
+.crew .sub-nav__item:hover, .crew .sub-nav__item--active {
+  opacity: 1;
+}/*# sourceMappingURL=crew.css.map */

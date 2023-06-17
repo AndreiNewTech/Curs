@@ -3,13 +3,7 @@ body {
 }
 
 .page-title {
-  letter-spacing: 3px;
   margin-bottom: 100px;
-}
-.page-title span {
-  font-weight: bold;
-  opacity: 0.25;
-  margin-right: 20px;
 }
 
 .sub-nav__list {
@@ -53,6 +47,9 @@ body {
 }
 .destination__content-footer .left-content, .destination__content-footer .right-content {
   width: 50%;
+}
+.destination__content-footer .sub-heading1 {
+  text-transform: uppercase;
 }
 .destination__content-footer .sub-heading2 {
   margin-bottom: 16px;
