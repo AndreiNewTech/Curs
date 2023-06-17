@@ -13,7 +13,6 @@
   margin-bottom: 70px;
 }
 
-
 /* Banner */
 .banner-container {
   background-color: #fceeea;
@@ -176,18 +175,15 @@
   width: 170px;
 }
 
-
 /* Media queries */
 
 /* Mobile */
 
 @media screen and (max-width: 576px) {
-
   /* Banner */
   .banner-text {
     height: 100%;
   }
-
 
   /* Products */
   .product-card {
@@ -218,12 +214,12 @@
     width: 80%;
     height: 30px;
   }
-  
+
   .product-button {
     width: 100%;
     height: inherit;
   }
- 
+
   /* Comanda */
   .comanda-sides {
     flex-direction: column-reverse;

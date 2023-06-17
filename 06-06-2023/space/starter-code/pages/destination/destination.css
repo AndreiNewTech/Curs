@@ -15,8 +15,9 @@ body {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-.sub-nav__item-link:link, .sub-nav__item-link:visited {
-  color: #D0D6F9;
+.sub-nav__item-link:link,
+.sub-nav__item-link:visited {
+  color: #d0d6f9;
 }
 .sub-nav__item--active {
   border-bottom: 2px solid white;
@@ -45,7 +46,8 @@ body {
 .destination__content-footer {
   display: flex;
 }
-.destination__content-footer .left-content, .destination__content-footer .right-content {
+.destination__content-footer .left-content,
+.destination__content-footer .right-content {
   width: 50%;
 }
 .destination__content-footer .sub-heading1 {
@@ -53,4 +55,4 @@ body {
 }
 .destination__content-footer .sub-heading2 {
   margin-bottom: 16px;
-}/*# sourceMappingURL=destination.css.map */
+} /*# sourceMappingURL=destination.css.map */

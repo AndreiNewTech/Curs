@@ -57,7 +57,6 @@ a:active {
   color: #0000ff;
 }
 
-
 /* Navigation */
 
 /* Logo */
@@ -90,7 +89,6 @@ a:active {
   gap: 20px;
 }
 
-
 /* Fooer  */
 
 .page-footer {
@@ -113,9 +111,7 @@ a:active {
   margin-bottom: 20px;
 }
 
-
 @media screen and (max-width: 576px) {
-
   /* General */
   .section-title {
     text-align: center;
@@ -142,7 +138,7 @@ a:active {
     margin: 0px;
     width: 100%;
     justify-content: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
 
   /* Footer */

@@ -1,70 +1,61 @@
-
 /* Selectors */
- 
+
 /* Tag selectors */
 
 /* css - casacding style sheet */
 :root {
-    
 }
 
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-    text-align: center;
-    color: rgb(42, 0, 104);
+  text-align: center;
+  color: rgb(42, 0, 104);
 }
-
-
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* Class si id selectors */
 
 .titlu-produs {
-    text-align: left;
+  text-align: left;
 }
 
 .subtitlu {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 #id-titlu {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
 .highlight {
-    font-weight: bold;
-    font-style: italic;
-    color: rgb(143, 0, 0);
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(143, 0, 0);
 }
 
 /* Combinators */
 
 .produse-discount .highlight {
-    color: green;
+  color: green;
 }
 
-
 .produse span span {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Pseudo-classes selectors */
@@ -81,44 +72,40 @@ h2 {
 
 */
 
-.produse div, .produse-discount div:first-child {
-    /* short-hand notation */
-    border: 1px solid;
-    margin-bottom: 20px;
-    /* border-width: 1px;
+.produse div,
+.produse-discount div:first-child {
+  /* short-hand notation */
+  border: 1px solid;
+  margin-bottom: 20px;
+  /* border-width: 1px;
     border-style: solid; */
-    /* border-color: red; */
+  /* border-color: red; */
 }
 
-
 button {
-    background: white;
-    padding-left: 10px;
-    padding-right: 10px;
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 button:hover {
-    background-color: azure;
-    cursor: pointer;
+  background-color: azure;
+  cursor: pointer;
 }
 
 .produse .button-container {
-    border: none;
-    margin-bottom: 0;
+  border: none;
+  margin-bottom: 0;
 }
 
-
 a:link {
-    color: black;
+  color: black;
 }
 
 a:visited {
-    color:rgb(143, 0, 0);
+  color: rgb(143, 0, 0);
 }
 
 a:hover {
-    color: blue;
+  color: blue;
 }
-
-
-

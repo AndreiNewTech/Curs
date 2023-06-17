@@ -1,7 +1,7 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 body {
-  background-image: url('../../assets/destination/background-destination-desktop.jpg');
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
 }
 
 .page-title {
@@ -18,7 +18,8 @@ body {
   &__item {
     text-transform: uppercase;
     padding-bottom: 10px;
-    &-link:link, &-link:visited {
+    &-link:link,
+    &-link:visited {
       color: $blue-light;
     }
 
@@ -28,17 +29,14 @@ body {
         color: $white;
       }
     }
-  
   }
 
-  &__item:hover  {
+  &__item:hover {
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
   }
   &__item--active:hover {
     border-bottom: 2px solid $white;
   }
-
-
 }
 
 .destination {
@@ -58,7 +56,8 @@ body {
 
   &__content-footer {
     display: flex;
-    .left-content, .right-content {
+    .left-content,
+    .right-content {
       width: 50%;
     }
     .sub-heading1 {

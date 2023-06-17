@@ -1,7 +1,6 @@
-
-@use 'general';
-@import 'colors';
-@import 'mixins';
+@use "general";
+@import "colors";
+@import "mixins";
 
 .generic-button {
   background: none;
@@ -19,7 +18,7 @@
 
   &__title {
     margin-bottom: 0;
-    text-align: center;;
+    text-align: center;
     color: $gray-light;
   }
 
@@ -41,5 +40,4 @@
     @extend .generic-button;
     color: red;
   }
-
 }

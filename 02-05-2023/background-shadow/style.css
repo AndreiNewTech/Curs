@@ -1,44 +1,43 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .background-container div {
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
 }
 
 .background-color {
-    font-size: 60px;
-    background-color: royalblue;
-    background-color: rgba(100, 23,23, 0.6);
+  font-size: 60px;
+  background-color: royalblue;
+  background-color: rgba(100, 23, 23, 0.6);
 }
 
 .background-image--1 {
-    background-image: url('https://thumbs.dreamstime.com/b/michael-jordan-chicago-bulls-legend-taking-free-throw-image-taken-color-slide-73861852.jpg');
-    /* background-repeat: initial; */
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url("https://thumbs.dreamstime.com/b/michael-jordan-chicago-bulls-legend-taking-free-throw-image-taken-color-slide-73861852.jpg");
+  /* background-repeat: initial; */
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .background-image--2 {
-    background: url('https://img.freepik.com/premium-photo/beautiful-golden-retriever-dog-breed_58409-5753.jpg?w=2000');
+  background: url("https://img.freepik.com/premium-photo/beautiful-golden-retriever-dog-breed_58409-5753.jpg?w=2000");
 
-    /* background-position-x: -350px;
+  /* background-position-x: -350px;
     background-position-y: -230px; */
-    /* background-size: 200px; */
-    background-size: contain;
+  /* background-size: 200px; */
+  background-size: contain;
 }
 
 .background-gradiant--linear {
-    /* background: linear-gradient(to bottom right,red,blue, green); */
-    background: linear-gradient(to left,orange, green);
+  /* background: linear-gradient(to bottom right,red,blue, green); */
+  background: linear-gradient(to left, orange, green);
 }
 
 .background-gradiant--radiant {
-    background: radial-gradient(blue, orange);
+  background: radial-gradient(blue, orange);
 }
 
 .background-gradiant--conic {
-    background: conic-gradient(red, yellow, green, blue);
+  background: conic-gradient(red, yellow, green, blue);
 }

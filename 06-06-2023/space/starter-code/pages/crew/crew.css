@@ -43,6 +43,7 @@ body {
   height: inherit;
   display: inline-block;
 }
-.crew .sub-nav__item:hover, .crew .sub-nav__item--active {
+.crew .sub-nav__item:hover,
+.crew .sub-nav__item--active {
   opacity: 1;
-}/*# sourceMappingURL=crew.css.map */
+} /*# sourceMappingURL=crew.css.map */

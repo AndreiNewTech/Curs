@@ -1,6 +1,6 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 body {
-  background-image: url('../../assets/technology/background-technology-desktop.jpg');
+  background-image: url("../../assets/technology/background-technology-desktop.jpg");
 }
 
 .page-title {
@@ -21,19 +21,18 @@ body {
       display: flex;
       flex-direction: column;
       gap: 30px;
-  
-      &__item {
 
+      &__item {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        border: 1px solid rgba(255,255,255, 0.8);
-        border-color: rgba(255,255,255, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-color: rgba(255, 255, 255, 0.4);
         font-size: $size-lg;
         color: $white;
         text-align: center;
         margin-right: 80px;
-        transition: border-color .3 ease-in;
+        transition: border-color 0.3 ease-in;
         cursor: pointer;
         &:hover {
           border-color: $white;
@@ -49,9 +48,7 @@ body {
           background-color: $white;
           a {
             color: $blue-dark;
-
           }
-   
         }
       }
     }

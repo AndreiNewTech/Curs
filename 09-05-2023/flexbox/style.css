@@ -10,7 +10,8 @@ main {
   margin: 50px 0;
 }
 
-.parent-1, .parent-2 {
+.parent-1,
+.parent-2 {
   display: flex;
   border: 1px solid black;
 }
@@ -39,22 +40,24 @@ main {
   justify-content: space-around;
 }
 
- .parent-1--1 .child-1:nth-child(1) {
+.parent-1--1 .child-1:nth-child(1) {
   width: 100px;
 }
 
-.child-1:nth-child(1), .child-2:nth-child(1) {
+.child-1:nth-child(1),
+.child-2:nth-child(1) {
   background-color: aquamarine;
 }
 
-.child-1:nth-child(2), .child-2:nth-child(2) {
+.child-1:nth-child(2),
+.child-2:nth-child(2) {
   background-color: rgb(148, 239, 74);
 }
 
-.child-1:nth-child(3), .child-2:nth-child(3) {
+.child-1:nth-child(3),
+.child-2:nth-child(3) {
   background-color: rgb(255, 217, 49);
 }
-
 
 /* Parent 2 */
 
@@ -105,7 +108,9 @@ main {
   margin-bottom: 10px;
 }
 
-.child-3, .child-4, .child-5 {
+.child-3,
+.child-4,
+.child-5 {
   width: 100px;
   height: 100px;
   margin-top: 0px;
@@ -119,9 +124,9 @@ main {
 /* Parent 4 */
 
 .parent-4 {
-  height: 600px;;
+  height: 600px;
   display: flex;
-  
+
   /* Directie */
   flex-direction: column;
 
