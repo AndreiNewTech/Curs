@@ -13,6 +13,10 @@ body {
     text-align: right;
   }
 
+  &__image-landscape {
+    display: none;
+  }
+
   &__content {
     display: flex;
     order: 1;
@@ -60,5 +64,53 @@ body {
 
   &__subtitle {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("../../assets/technology/background-technology-tablet.jpg");
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 0;
+  }
+
+  .technology__image {
+    order: 1;
+    width: 100%;
+    width: calc(100vw + 3px);
+    position: relative;
+    left: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    &-landscape {
+      width: 100%;
+      display: initial;
+    }
+
+    &-portrait {
+      display: none;
+    }
+  }
+
+  .technology__content {
+    order: 2;
+    flex-direction: column;
+
+    .aside-nav {
+      flex-direction: row;
+      justify-content: center;
+      &__item {
+        margin-right: 0;
+      }
+      margin-bottom: 80px;
+    }
+
+    padding: 70px;
+    text-align: center;
   }
 }

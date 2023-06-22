@@ -43,7 +43,57 @@ body {
   height: inherit;
   display: inline-block;
 }
-.crew .sub-nav__item:hover,
-.crew .sub-nav__item--active {
+.crew .sub-nav__item:hover, .crew .sub-nav__item--active {
   opacity: 1;
-} /*# sourceMappingURL=crew.css.map */
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  }
+  .content-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 0;
+  }
+  .crew {
+    gap: 0;
+  }
+  .crew__image {
+    width: 60%;
+  }
+  .crew__image img {
+    width: 100%;
+  }
+  .crew__content {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 70px;
+  }
+  .crew .sub-nav {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .crew__image {
+    order: 1;
+  }
+  .crew__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-nav {
+    order: 1;
+    margin-bottom: 50px;
+  }
+  .crew__description {
+    order: 4;
+    margin-bottom: 0;
+  }
+  .crew__title {
+    order: 3;
+  }
+  .crew__subtitle {
+    order: 2;
+  }
+}/*# sourceMappingURL=crew.css.map */

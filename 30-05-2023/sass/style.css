@@ -8,8 +8,7 @@ body {
   margin: auto;
 }
 
-.generic-button,
-.card__button {
+.generic-button, .card__button {
   background: none;
   border: 1px solid black;
   padding: 16px;
@@ -45,4 +44,4 @@ body {
 }
 .card__button {
   color: red;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

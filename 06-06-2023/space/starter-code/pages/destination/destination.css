@@ -15,8 +15,7 @@ body {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-.sub-nav__item-link:link,
-.sub-nav__item-link:visited {
+.sub-nav__item-link:link, .sub-nav__item-link:visited {
   color: #d0d6f9;
 }
 .sub-nav__item--active {
@@ -55,4 +54,21 @@ body {
 }
 .destination__content-footer .sub-heading2 {
   margin-bottom: 16px;
-} /*# sourceMappingURL=destination.css.map */
+}
+
+@media screen and (max-width: 900px) {
+  .destination__content {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .sub-nav__list {
+    justify-content: center;
+  }
+  .destination__image {
+    margin-bottom: 80px;
+    width: 60%;
+  }
+  .destination__image img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=destination.css.map */

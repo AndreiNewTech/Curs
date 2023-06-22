@@ -65,3 +65,50 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 0;
+  }
+
+  .homepage-content {
+    text-align: center;
+  }
+
+  .homepage-content,
+  .homepage-button {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation__right {
+    display: none;
+  }
+
+  .content-container {
+    .homepage-button {
+      button {
+        width: 175px;
+        height: 175px;
+      }
+      &::before {
+        display: none;
+      }
+
+      h4 {
+        width: initial;
+        height: initial;
+      }
+      h4 a {
+        font-size: 24px;
+      }
+    }
+  }
+}

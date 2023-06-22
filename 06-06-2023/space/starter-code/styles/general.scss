@@ -36,14 +36,14 @@ main {
 
 body {
   max-width: 1400px;
-  margin: 20px auto;
+  margin: 0 auto;
+  min-height: 100vh;
   padding: 20px 20px 0 20px;
   margin-bottom: 0;
   background: $blue-dark;
   background-image: url("../assets/home/background-home-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-y: hidden;
 }
 
 ol,
@@ -131,8 +131,8 @@ p {
 }
 
 .page-title {
-  letter-spacing: 3px;
-
+  letter-spacing: 5px;
+  color: $white;
   span {
     font-weight: bold;
     opacity: 0.25;
@@ -181,5 +181,72 @@ p {
     &-number {
       font-weight: 700;
     }
+  }
+  .mobile-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 0px;
+  }
+
+  .navigation {
+    &__list {
+      padding: 0;
+    }
+
+    &__line,
+    &__item-number {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // .navigation__right {
+  //   display: none;
+  // }
+
+  .navigation__list {
+    display: none;
+    // width: 0;
+    // height: 100vh;
+  }
+
+  .page-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .crew-content {
+    padding: 30px;
+  }
+  .crew__title {
+    font-size: 32px;
+  }
+
+  .mobile-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+  // .mobile-icon:hover .navigation__list {
+  //   display: block;
+  //   position: absolute;
+  //   right: 0;
+  //   top: 0;
+  //   width: 300px;
+  //   height: 100vh;
+  //   background: grey;
+  //   text-align: center;
+  //   z-index: 1000;
+  //   background: black;
+  // }
+
+  .navigation__right {
+    width: initial;
   }
 }
