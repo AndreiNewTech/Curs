@@ -100,6 +100,8 @@ body {
   .technology__content {
     order: 2;
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
 
     .aside-nav {
       flex-direction: row;
@@ -112,5 +114,18 @@ body {
 
     padding: 70px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  }
+
+  .technology__content {
+    order: 2;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

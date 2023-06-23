@@ -128,6 +128,7 @@ p {
 .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .page-title {
@@ -183,6 +184,7 @@ p {
     }
   }
   .mobile-icon {
+    width: 20px;
     display: none;
   }
 }
@@ -205,14 +207,8 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  // .navigation__right {
-  //   display: none;
-  // }
-
-  .navigation__list {
-    display: none;
-    // width: 0;
-    // height: 100vh;
+  h1 {
+    font-size: 100px;
   }
 
   .page-title {
@@ -220,33 +216,50 @@ p {
     margin-bottom: 50px;
   }
 
-  .crew-content {
-    padding: 30px;
-  }
-  .crew__title {
-    font-size: 32px;
-  }
+  .navigation {
+    .mobile-icon {
+      display: initial;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
 
-  .mobile-icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-  }
+    &__list {
+      position: fixed;
+      width: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      flex-direction: column;
+      backdrop-filter: blur(25px);
+      transition: width 0.2s ease-in-out, visibility 0.2s ease;
+      z-index: 1000;
+      overflow-x: hidden;
+      visibility: hidden;
+      padding: 150px 0 0 20px;
+      height: 100vh;
+    }
 
-  // .mobile-icon:hover .navigation__list {
-  //   display: block;
-  //   position: absolute;
-  //   right: 0;
-  //   top: 0;
-  //   width: 300px;
-  //   height: 100vh;
-  //   background: grey;
-  //   text-align: center;
-  //   z-index: 1000;
-  //   background: black;
-  // }
+    .mobile-icon:hover + &__list,
+    &__list:hover {
+      width: 350px;
+      visibility: visible;
+    }
 
-  .navigation__right {
-    width: initial;
+    &__right {
+      position: relative;
+      backdrop-filter: none;
+    }
+
+    &__item {
+      padding: 0;
+      &:hover,
+      &--active {
+        border-bottom: none;
+      }
+      &-number {
+        display: initial;
+      }
+    }
   }
 }

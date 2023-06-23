@@ -70,13 +70,14 @@
   .homepage-content {
     text-align: center;
   }
-  .homepage-content, .homepage-button {
+  .homepage-content,
+  .homepage-button {
     margin-bottom: 100px;
   }
 }
 @media screen and (max-width: 600px) {
-  .navigation__right {
-    display: none;
+  body {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
   }
   .content-container .homepage-button button {
     width: 175px;

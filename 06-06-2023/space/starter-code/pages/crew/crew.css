@@ -49,7 +49,7 @@ body {
 
 @media screen and (max-width: 900px) {
   body {
-    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
   }
   .content-container {
     grid-template-columns: 1fr;
@@ -75,12 +75,18 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
+  body {
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  }
   .crew__image {
     order: 1;
   }
   .crew__content {
     display: flex;
     flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-right: 0;
+    padding-left: 0;
   }
   .sub-nav {
     order: 1;
@@ -92,6 +98,7 @@ body {
   }
   .crew__title {
     order: 3;
+    font-size: 32px;
   }
   .crew__subtitle {
     order: 2;
