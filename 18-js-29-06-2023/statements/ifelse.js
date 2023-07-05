@@ -69,7 +69,6 @@
     console.log("Not a corect name whatsoever");
   }
 
-
   const value = 'String';
   // Truthy
   // const value = 123;
@@ -90,7 +89,15 @@
     console.log('Falsy', value);
   }
 
-  // Un mic programel care sa afiseze daca o persoana este majora sau minora
 
+  // Ternary conditional statement
+  const varsta = 16;
+  const esteMajor = varsta >= 18 ? 'Este major' : 'Nu este major';
 
+//   let esteMajor2;
+//   if (varsta >= 18) {
+//     esteMajor2 = 'Este major';
+//  } else {
+//     esteMajor2 = 'Nu este major';
+//  }
 
