@@ -74,7 +74,18 @@ function zileleSaptamaniiFunctie() {
 
 zileleSaptamaniiFunctie();
 
+const daysArray = [1,2,3];
 
+
+// asignarea by reference ,sau by value
+
+
+
+function fn(arr) {
+  // const newArr = [...arr]
+  newArr.pop();
+  return newArr;
+}
 
 
 
