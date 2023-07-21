@@ -101,6 +101,8 @@ const getOrderedList = function(unorderedList) {
   return unorderedList;
 }
 
+
+
 const getFilteredListRestructured = (elementsList) => {
   // 1. Filtram numerele
   const numberFilterdArr = getNumberFilteredList(elementsList);
@@ -204,7 +206,6 @@ bodyElemn.addEventListener('mouseover', () => {
 // callFunctionParam(logHello);
 
 
-
 // Flatten Recursevly
 const testAr = [21,3,[[[3, 10 ,20 ,[2]]]], [231, [23]]];
 
@@ -218,7 +219,6 @@ const fn = (arrInArr, arr) => {
     }
   });
 }
-
 
 
 const t = (function(val) {
