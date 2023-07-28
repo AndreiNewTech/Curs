@@ -1,0 +1,35 @@
+Cerinta exercitiului sa cream o librarie care sa contina
+detalii despre:
+- locatia sa
+- angajatii pe care ii are  
+- cartile pe care le detine
+
+Libraria contine proprietatile:
+- id
+- un obiect de tip adresa
+- o lista de angajati (object de tip angajat)
+- o lista de carti (object de tip carte)
+
+
+Angajat: 
+- id 
+- nume
+- varsta
+- adresa
+
+Carte:
+- id
+- titlu
+- autor
+- gen
+
+Pentru populare vom avea functii de generare de data:
+- o functie care ne creaza o lista de angajati in functie (param numarDeAgajati)
+- o functie care ne creaza o lista de carti (param numar)
+- o functie care sa ne genereze un id# unic
+
+// Sa detinem un object de tip librarie care sa contina angajatii, cartile, adresa
+cu toate valorile de riguare  
+
+// Urmatorul pas, sa imbunatatim codul 
+

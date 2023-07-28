@@ -90,3 +90,10 @@ const date = new Date();
 console.log(fn(2,4));
 
 
+const arr2 = [];
+
+// Array.prototype.add2Numbers = function(a,b) {
+//   return a + b;
+// };
+
+// console.log(arr2.add2Numbers(1,2));
