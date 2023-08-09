@@ -96,8 +96,6 @@ function generateCartiLista(numarDeCarti, numeDeStart) {
 
 console.log(generateCartiLista(10, 'Minunata'));
 
-
-
 function generateAdress() {
     const listaStrazi = ['Str Mihai Viteazu', 'Str Nicolae Balcescu', 'Str Stefan cel Mare', 'Str Bogdan Voda', 'Str Tudor Vladimirescu'];
     const randomNumberStraziIndex = Math.floor(Math.random() * listaStrazi.length);    

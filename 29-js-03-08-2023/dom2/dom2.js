@@ -87,7 +87,6 @@ cardsFooterElement.style.width = cardElementWidth + 'px';
 
 console.log(cardElementWidth);
 
-
 // Accesare parent, sibling, si child nodes
 // parent
 const cardsElementParent = cardsElement.parentNode;
