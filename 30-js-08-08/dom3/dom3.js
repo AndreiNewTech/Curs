@@ -34,7 +34,7 @@ languagesList.forEach((el, index) => {
 
 console.log(languagesListElement);
 
-bodyElement.insertBefore(languagesListElement, heading2Element);
+// bodyElement.insertBefore(languagesListElement, heading2Element);
 heading2Element.before(languagesListElement);
 
 // bodyElement.appendChild(languagesListElement);

@@ -38,10 +38,12 @@ const trHeadElement = document.createElement('tr');
 const thElement = document.createElement('th');
 const thElement1 = document.createElement('th');
 const thElement2 = document.createElement('th');
+const thElement3 = document.createElement('th');
 
 thElement.textContent = 'Index';
 thElement1.textContent = 'Limbaj';
 thElement2.textContent = 'Dificultate';
+thElement3.textContent = 'Stergere';
 
 tableElement.style.fontFamily = 'arial, sans-serif';
 tableElement.style.borderCollapse = 'collapse';
@@ -50,6 +52,7 @@ tableElement.style.width = '100%';
 trHeadElement.appendChild(thElement);
 trHeadElement.appendChild(thElement1);
 trHeadElement.appendChild(thElement2);
+trHeadElement.appendChild(thElement3);
 
 tableElement.appendChild(trHeadElement);
 containerElement.appendChild(tableElement);
@@ -65,6 +68,11 @@ listaLimbaje.forEach((limbajObj, index) => {
 function addNewElementToTable(obj, index) {
   // Appenduirea in tabel
   const trElement = document.createElement('tr');
+  // varianta 2 de stergere
+  // trElement.addEventListener('click', function(event) {
+  //   // console.log(event.target);
+  //   this.remove();
+  // })
   
   // Daca row-ul este impar
   if (index % 2 !== 0) {
@@ -83,7 +91,25 @@ function addNewElementToTable(obj, index) {
     colRowElement.textContent = obj[prop];
     trElement.appendChild(colRowElement);
   }
+
   tableElement.appendChild(trElement);
+
+  const tdDeleteElement = document.createElement('td');
+  adaugareStyleTd(tdDeleteElement);
+  tdDeleteElement.innerHTML= '<div class="close" style="text-align:center; cursor:pointer">X</div>';
+
+
+  tdDeleteElement.addEventListener('click', function(e) {
+    const tdEl = e.target.parentElement;
+    const trEl = tdEl.parentElement;
+    trEl.remove();
+  })
+  
+
+  trElement.appendChild(tdDeleteElement);
+  
+
+
 }
 
 
@@ -101,7 +127,7 @@ function addNewLanguage(obj) {
 // etc
 
 function onClickEvent() {
-  console.log('Click');
+  // console.log('Click');
 }
 function onClickEvent1() {
   console.log('Click1');
@@ -113,19 +139,35 @@ function onHoverEvent() {
 
 containerElement.addEventListener('click', onClickEvent);
 containerElement.addEventListener('click', onClickEvent1);
-containerElement.addEventListener('mouseover', onHoverEvent);
+
+// Inalturarea unui event listener
+containerElement.removeEventListener('click', onClickEvent1);
+
+// containerElement.addEventListener('mouseover', onHoverEvent);
 
 const addLanguageElement = document.createElement('button');
 
-addLanguageElement.addEventListener('click', (event) => {
+addLanguageElement.addEventListener('click', () => {
   const denumire = prompt('Denumire')
   const dificultate = parseFloat(prompt('Dificultate'));
-  addNewLanguage({
+  const languageObj = {
     denumire: denumire,
     dificultate: dificultate
-  });
+  }
+  addNewLanguage(languageObj);
 });
 
 
 addLanguageElement.textContent = 'Adauga';
 document.body.appendChild(addLanguageElement);
+
+
+// varianta 1 de stergere 
+
+// containerElement.addEventListener('click', function(event) {
+//   const rowColElement = event.target;
+//   rowColElement.parentElement.remove();
+// })
+
+
+
