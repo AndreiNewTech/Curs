@@ -52,10 +52,7 @@ document.getElementById("parent").addEventListener("click", function (e) {
   e.stopPropagation();
 });
 
-document.getElementById("child").addEventListener("click", function (e) {
-  alert("Child Div Clicked!");
-});
-
+document.getElementById("child").addEventListener("click", fn);
 
 
 // Prevent default
@@ -74,6 +71,11 @@ formElement.addEventListener('submit', function(el) {
   // console.log(el.target.value)
 })
 
+
+
+function test() {
+  console.log(test2.test);
+}
 
 
 
