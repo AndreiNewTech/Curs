@@ -70,11 +70,19 @@ function outputNumber(num) {
   console.log(num);
 }
 
+
 try {
   outputNumber('hello');
+  // preiei date dintr-un backend de care nu esti sigur
+  const serverData = [{personObj: {name: 'Andrei'}}, {personObj: {name: 'Alex'}}];
+  // ar da o eroare aici
+  serverData.forEach(el => {
+    console.log(el.person.name)
+  })
 } catch(error) {
   console.log(error,'error');
 }
+
 
 function outputString(str) {
   try {
