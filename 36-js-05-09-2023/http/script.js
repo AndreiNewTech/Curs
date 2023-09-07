@@ -72,11 +72,10 @@ const URL_BASE = "https://collectionapi.metmuseum.org/public/collection/v1"
 const URL_VAL  = 'https://collectionapi.metmuseum.org/public/collection/v1/objects';
 const URL_DEPARTAMENTE = 'https://collectionapi.metmuseum.org/public/collection/v1/departments'
 // accesarea id-urilor 
-
 fetch(URL_DEPARTAMENTE, {method: 'GET'}).then(valRes => {
   return valRes.json();
 }).then(val => {
-  console.log(val)
+  // console.log(val)
   // departamentul de Arms And Armour
   let departmentId;
   val.departments.forEach(department => {
@@ -95,9 +94,14 @@ fetch(URL_DEPARTAMENTE, {method: 'GET'}).then(valRes => {
   for (let i = 0; i < 3; i++) {
     requests.push(fetch(`${URL_VAL}/${val.objectIDs[i]}`))
   }
-
   return Promise.all(requests);
 }).then(finalVal => {
-  console.log(finalVal);
+  // console.log(finalVal);
   return finalVal.map(request => request.json())
-}).then(val => console.log(val));
+}).then(val => 
+    val.forEach(el => {
+      el.then(val => {
+        console.log(val);
+      });
+    })
+  );
