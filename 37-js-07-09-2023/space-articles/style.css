@@ -17,7 +17,7 @@ main {
 }
 
 a:link, a {
-  font-style: none;
+  font-style: none; 
   text-decoration: none;
   color: black;
 }
