@@ -1,4 +1,6 @@
-import { createArticleHtml } from './utils.js';
+import { createArticleHtml } from './common/article.js';
+import { PAGES_NAMES } from './utils/constants.js';
+import { getLastPathValue } from './utils/utilMethods.js';
 
 // Cerinte
 // Iterare 1.
@@ -13,8 +15,8 @@ import { createArticleHtml } from './utils.js';
 let articles = [];
 
 document.addEventListener("DOMContentLoaded", (event) => {
-  const pathName = event.target.location.pathname.split('/').at(-1);
-  if (pathName === 'index.html') {
+  const pathName = getLastPathValue(event);
+  if (pathName === PAGES_NAMES.home) {
     const BASE_URL = 'https://api.spaceflightnewsapi.net/v4/';
     const ARTICLES_PARAM = 'articles';
     const articlesContainerEl = document.querySelector('.articles');
@@ -63,28 +65,61 @@ document.addEventListener("DOMContentLoaded", (event) => {
     
     const insertArticlesInDom = (articlesList = []) => {
       articlesList.forEach(article => {
-        createArticleHtml(articlesContainerEl, article);
+        createArticleHtml(articlesContainerEl, article, PAGES_NAMES.home);
       })
+    }
+
+
+    const enableOrDisableLoadingEl = (enable) => {
+      const loadingEl = document.querySelector('.loading-state');
+      const isElemActive =  loadingEl.classList.contains('loading-state--visible');
+ 
+      if (enable && isElemActive) {
+        return;
+      }
+      if (enable) {
+        loadingEl.classList.add('loading-state--visible');
+      }
+      else {
+        loadingEl.classList.remove('loading-state--visible');
+      }
+    }
+
+    const renderNoDataEl = () => {
+      const noDataElem = document.createElement('h4');
+      noDataElem.className = "no-data";
+      noDataElem.textContent = 'There was a problem accesing the data';
+      document.getElementsByTagName('main')[0].appendChild(noDataElem);
     }
     
     
     const fetchAndRenderData = async (paginationUrl) => {
+      enableOrDisableLoadingEl(true);
+      document.getElementsByClassName('no-data')[0]?.remove();
       try {
         const data = await fetchData(paginationUrl);
         const mappedArticles = mapArticlesObj(data?.results);
+        enableOrDisableLoadingEl(false);
         insertArticlesInDom(mappedArticles);
         articles = [...mappedArticles];
+
       } catch(e) {
-        console.log(e)
+        console.log(e);
+        renderNoDataEl();
       }
-    }
+    };
     
     const handlePaginationClick = (paginationUrl) => {
       fetchAndRenderData(paginationUrl);
       const articlesContainer = document.querySelector('.articles');
       articlesContainer.innerHTML = '';
+    };
+
+    function render() {
+      fetchAndRenderData();
     }
-    
+
+    // Event listeners
     paginationNextEl.addEventListener('click',  () => {
       if (nextPaginationUrl) {
         handlePaginationClick(nextPaginationUrl);
@@ -97,13 +132,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     })
     
-    function render() {
-      fetchAndRenderData();
-    }
-    
     render();
-  
-    console.log('Loaded');
   }
 });
 
