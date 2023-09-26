@@ -1,7 +1,7 @@
-import { getSavedArticlesStorage } from "../utils/storage.js";
-import { createArticleHtml } from '../common/article.js';
-import { PAGES_NAMES } from '../utils/constants.js';
-import { getLastPathValue } from '../utils/utilMethods.js';
+import { getSavedArticlesStorage } from "../../utils/storage.js";
+import { createArticleHtml } from '../../common/article.js';
+import { PAGES_NAMES } from '../../utils/constants.js';
+import { getLastPathValue } from '../../utils/utilMethods.js';
 
 document.addEventListener("DOMContentLoaded", (event) => {
   const pathName = getLastPathValue(event);

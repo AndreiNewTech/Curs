@@ -5,13 +5,16 @@ import { DATE_OPTIONS, PAGES_NAMES}  from '../utils/constants.js';
 
 
 function handleArticleSaveClick(e, objectId) {
+  console.log(e,objectId, articles);
   const articleObj= articles.find(function(article) {
     return article.id === objectId;
   });
 
+  console.log(articleObj)
+
   const savedArticlesList = getSavedArticlesStorage() ?? [];
   // Find if the article was already saved
-  const savedArticlesArticle= savedArticlesList.find(function(article) {
+  const savedArticlesArticle = savedArticlesList.find(function(article) {
     return article.id === objectId;
   });
 

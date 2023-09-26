@@ -14,7 +14,7 @@
         <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="./savedArticles/saved-articles.html">Saved Articles</a>
+          <a href="./pages/savedArticles/saved-articles.html">Saved Articles</a>
         </li>
       </ul>
     </nav>
@@ -24,13 +24,22 @@
   </header>
 
   <main>
+
+    <div class="form-container">
+      <form id="filter-form">
+        <label for="title"></label>
+        <input type="text" name="title" id="title" placeholder="Article Title">
+      </form>
+    </div>
     <div class="loading-state loading-state--visible"></div>
     <section class="articles">
     </section>
-    <div class="pagination-container">
+    <div class="pagination-container not-visible">
       <span class="pagination-previous"> &#60;</span>
       <span class="pagination-next"> &#62;</span>
     </div>
+
+    <h3 class="no-articles">No articles have been found</h3>
   </main>
 
   <footer></footer>

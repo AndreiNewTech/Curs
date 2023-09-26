@@ -129,6 +129,30 @@ article {
   display: inline-block;
 }
 
+.form-container {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.form-container input {
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  border: 2px solid rgba(0,0,0,0.5);
+  font-size: 18px;
+} 
+
+.no-articles, .not-visible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
 /*  Spinner */
 @keyframes spin {
   to { -webkit-transform: rotate(360deg); }

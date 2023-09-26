@@ -1,16 +1,6 @@
 import { createArticleHtml } from './common/article.js';
 import { PAGES_NAMES } from './utils/constants.js';
-import { getLastPathValue } from './utils/utilMethods.js';
-
-// Cerinte
-// Iterare 1.
-// - Facem fetch la o lista de articole de spatiu
-// - Populam html-ul cu lista noua 
-// - Sa adaugam posibilitatea de a o pagina 
-    // - Iconita de dreapta stanga
-    // - Fetch de 10 in fata sau in spate in functie de click
-
-/// Variable and data declaration
+import { getLastPathValue, debounce } from './utils/utilMethods.js';
 
 let articles = [];
 
@@ -19,16 +9,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
   if (pathName === PAGES_NAMES.home) {
     const BASE_URL = 'https://api.spaceflightnewsapi.net/v4/';
     const ARTICLES_PARAM = 'articles';
+    const URL_ARTICLES =  `${BASE_URL}${ARTICLES_PARAM}`;
     const articlesContainerEl = document.querySelector('.articles');
+    const paginationContainerEl = document.querySelector('.pagination-container');
     const paginationPreviousEl = document.querySelector('.pagination-previous');
     const paginationNextEl = document.querySelector('.pagination-next');
+    const noArticlesMessageEl = document.querySelector('.no-articles');
+    const articlesContainer = document.querySelector('.articles');
+    // Form
+    const inputTitleFilterEl = document.getElementById('title');
+    const filterFormEl = document.querySelector('#filter-form');
   
     let nextPaginationUrl = '';
     let previousPagniationUrl = '';
     
     
     const fetchData = async (urlOffset) => {
-      const URL = urlOffset || `${BASE_URL}${ARTICLES_PARAM}/?limit=10&offset=0`;
+      const URL = urlOffset || `${URL_ARTICLES}/?limit=10&offset=0`;
     
       try {
         const articlesResponseObj = await fetch(URL);
@@ -84,18 +81,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         loadingEl.classList.remove('loading-state--visible');
       }
     }
-
-    const renderNoDataEl = () => {
-      const noDataElem = document.createElement('h4');
-      noDataElem.className = "no-data";
-      noDataElem.textContent = 'There was a problem accesing the data';
-      document.getElementsByTagName('main')[0].appendChild(noDataElem);
-    }
-    
     
     const fetchAndRenderData = async (paginationUrl) => {
       enableOrDisableLoadingEl(true);
-      document.getElementsByClassName('no-data')[0]?.remove();
+      paginationContainerEl.classList.add('not-visible');
+      noArticlesMessageEl.classList.remove('visible');
+      // Clear article container
+
+      articlesContainer.innerHTML = '';
       try {
         const data = await fetchData(paginationUrl);
         const mappedArticles = mapArticlesObj(data?.results);
@@ -103,17 +96,33 @@ document.addEventListener("DOMContentLoaded", (event) => {
         insertArticlesInDom(mappedArticles);
         articles = [...mappedArticles];
 
+        if (mappedArticles.length === 0) {
+          noArticlesMessageEl.classList.add('visible');
+          paginationContainerEl.classList.add('not-visible');
+        } else {
+          paginationContainerEl.classList.remove('not-visible');
+        }
+
       } catch(e) {
-        console.log(e);
-        renderNoDataEl();
+        insertArticlesInDom([]);
       }
     };
     
     const handlePaginationClick = (paginationUrl) => {
       fetchAndRenderData(paginationUrl);
-      const articlesContainer = document.querySelector('.articles');
-      articlesContainer.innerHTML = '';
     };
+
+    const filterTitleCallback = async (event) => {
+      const inputValue = event.target.value;
+      let newUrl;
+      if (inputValue.length) {
+         newUrl = `${URL_ARTICLES}/?title_contains=${inputValue}`
+      } else {
+        newUrl = null;
+      }
+  
+      fetchAndRenderData(newUrl);
+    }
 
     function render() {
       fetchAndRenderData();
@@ -131,10 +140,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
         handlePaginationClick(previousPagniationUrl);
       }
     })
+
+    filterFormEl.addEventListener('submit', (e) => {
+      e.preventDefault();
+    });
+
+    inputTitleFilterEl.addEventListener('input', debounce(filterTitleCallback, 500));
     
+    // Render initial
     render();
   }
 });
+
 
 
 export { articles };  
