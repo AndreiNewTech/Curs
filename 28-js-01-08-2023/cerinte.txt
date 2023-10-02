@@ -1,0 +1,67 @@
+xercitiu: Constructor Functions
+
+Dorim sa facem o platforma de management al scolilor. Incepem cu o Scoala care sa contina:
+
+- Adresa : un constructor de tip Adresa
+- Denumire: un string
+- Profesori: lista de obiecte formate din constructor de tip Profesor
+- Elevi: lista de obiecte formate din constructor de tip Elevi
+- Angajati Auxiliari: lista de obiecte fromate din constructor de tip Angajati auxiliari
+- Clase: lista de obiecte fromate din constructor de tip Clasa (clasele reprezentand treapta curenta in care se afla elevii)
+- Sala de clasa:  lista de obiecte fromate din constructor de tip SalaDeClasa (de regula este aprox egala cu numarul de clase)
+
+- Adresa : 
+	strada,
+	numar,
+	oras
+
+- Profesor: 
+	id
+	nume
+	prenume
+	disciplina
+	clasa: lista de Clase la care predau acesti profesori.
+
+- Elev:
+	id
+	nume
+	prenume
+	varsta
+	clasa: Clasa
+
+- Angajat aux
+	id
+	nume
+	prenume
+	rol : una dintre [Contabil, Psihoterapeut, Asistent, Portar]
+
+- Clasa:
+	id
+	denumireClasa: [(clase 12 in total, 9A, 9B,9C - 12A, 12B, 12C)],
+	elevi: lista de elevi ce apartin clasei
+	salaDeClasa: SalaDeClasa
+
+- Sala de clasa
+	id
+	denumire: Dintr-o lista limitate de sali de clasa [Sala Parter 1, Sala parter 2, etc.. Sala 1 Etaj...]
+	clasa: Clasa (o sala de clasa va avea de regula o clasa)
+	
+- Hint, incepeti prin a creea Clasa si Sala de Clasa deoarece celelalte entitati vor folosi id-urile Claselor pentru popularea randurilor.
+1. Realizati o functie care sa genereze Elevi  (elev depinde de existenta clasei) (numar de 20 de elevi per clasa)
+2. Realizati o functie care sa genereze Profesori (profesor depinde de existenta clasei) (14 profesori (unii pot avea mai multe clase altii mai putine)
+3. Realizati o functie care sa genereze Angajati Aux (6-8, din cele auxiliare)
+4. Realizati o functie care sa genereze Clase (clasa depinde de existenta Sali De Clase)
+5. Realizati o functie care sa genereze Sali De Clase. (sala de clasa are o Clasa)
+6. Faceti astfel incat sa existe o legatura intre entitati. 
+-	Elev apartine unei Clase, asadar mai multi elevi pot apartine aceleasi clase (Clasa sa fie instanta de Clasa, acelasi id de clasa sa fie
+	atat folosit de elev cat si folosit de profesor la lista de clase).
+-	Profesor apartine unei Clase, dar pot apartine si mai multor clase
+-	Sala de clasa poate avea o Clasa. (prin asociere elevii vor fi asociaati unei sali de clasa)
+
+Creati instantele astfel incat sa se regaseasca aceeleasi instante (cu id-urile) si in celelate liste care au dependinta de ele.
+
+7. Faceti si Adresa si la final instanta de Scoala
+8. Bonus + mai dificil Daca observati, profesor, elev si auxiliar au aproape aceleasi proprietati cu anumite diferente. Vedeti daca puteti
+face un alt constructor Persoana care sa contina : id nume si prenume si sa fie mostenit de catre Profesor, Elev si Angajat aux. (nu am facut la curs,
+cautati inehritence) 
+

@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+main {
+  margin-bottom: 100px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+a:link, a {
+  font-style: none; 
+  text-decoration: none;
+  color: black;
+}
+
+  a:hover {
+  color: rgb(6, 6, 173);
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 60px;
+  margin: 100px 0;
+}
+
+.nav-list {
+  display:  flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.nav-list li {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+article {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.article__image-container {
+  width: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.article__image-container img {
+  width: 100%;
+}
+
+.article__saved-label, .article__button-container {
+  width: 110px;
+}
+
+.article__button-container button {
+  background-color: white;
+  height: 30px;
+  cursor: pointer;
+}
+
+.article__button-container {
+  display: flex;
+}
+
+.article__content-container {
+  width: 50%;
+}
+
+.article__footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 60px;
+}
+
+.pagination-container span {
+ font-size: 30px; 
+ font-weight: bold;
+ 
+}
+
+.pagination-container span:hover {
+  cursor: pointer;
+}
+
+.loading-state {
+  display: none;
+  text-align: center;
+  margin: 50px;
+  margin-bottom: 100px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0,0,0,.3);
+  border-radius: 50%;
+  border-top-color: black;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+.loading-state--visible {
+  display: inline-block;
+}
+
+.form-container {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.form-container input {
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  border: 2px solid rgba(0,0,0,0.5);
+  font-size: 18px;
+} 
+
+.no-articles, .not-visible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+/*  Spinner */
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}

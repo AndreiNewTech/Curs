@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        width: 90%;
+        margin: auto;
+      }
+
+      h1 {
+        margin-bottom: 100px !important;
+      }
+
+      .card--modif {
+        width: 200px;
+      }
+    </style>
+    <main>
+      <h1 class="text-center mb-5">Bootrstrap Components</h1>
+
+      <!-- Buttons -->
+      <section class="mb-4">
+        <h2>Buttons</h2>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Primary</button>
+        <button class="btn btn-disabled">Primary</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+      </section>
+
+      <!-- Navigation  -->
+      <section class="mb-5">
+        <h2>Navigation</h2>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Card -->
+      <section class="mb-5">
+        <h2>Card</h2>
+        <div class="card card--modif">
+          <img
+            src="https://www.adobe.com/express/feature/image/media_16ad2258cac6171d66942b13b8cd4839f0b6be6f3.png?width=750&format=png&optimize=medium"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <section class="mb-5">
+        <h2>Modal</h2>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Progress Bar -->
+      <section class="mb-4">
+        <h2>Progress Bars</h2>
+        <div
+          class="progress mb-4"
+          role="progressbar"
+          aria-label="Basic example"
+          aria-valuenow="0"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div class="progress-bar" style="width: 0%"></div>
+        </div>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Basic example"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div class="progress-bar" style="width: 10%"></div>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <section class="mb-5">
+        <h2>Formular</h2>
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Example textarea</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </form>
+      </section>
+
+      <!-- Layout -->
+      <section class="row gx-5 mb-5">
+        <div class="col gx-3">
+          <div class="p-3 card">
+            <img
+              src="https://www.adobe.com/express/feature/image/media_16ad2258cac6171d66942b13b8cd4839f0b6be6f3.png?width=750&format=png&optimize=medium"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col gx-5">
+          <div class="p-3 card">
+            <img
+              src="https://www.adobe.com/express/feature/image/media_16ad2258cac6171d66942b13b8cd4839f0b6be6f3.png?width=750&format=png&optimize=medium"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col gx-5">
+          <div class="p-3 card">
+            <img
+              src="https://www.adobe.com/express/feature/image/media_16ad2258cac6171d66942b13b8cd4839f0b6be6f3.png?width=750&format=png&optimize=medium"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container px-4 mb-5">
+        <div class="row">
+          <div class="col">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

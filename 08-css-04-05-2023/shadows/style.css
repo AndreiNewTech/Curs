@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.articles {
+  margin-top: 100px;
+}
+
+.articles article {
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.articles article:nth-child(1) {
+  box-shadow: 10px 10px blue;
+}
+
+.articles article:nth-child(2) {
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.articles article:nth-child(3) {
+  box-shadow: 4px 4px blue, 8px 8px green, 12px 12px red, -8px -8px;
+}
+
+.articles article:nth-child(4) {
+  border-radius: 20px;
+  box-shadow: 10px 4px;
+}
+
+/* Outline example */
+.articles article:nth-child(5) {
+  border: 5px solid red;
+  outline: black solid 10px;
+}
+
+.articles img {
+  width: 150px;
+}
+
+.articles h2 {
+  text-shadow: 2px 2px red, -2px -2px #0000ff;
+}

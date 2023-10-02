@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Roboto:ital,wght@0,100;0,700;0,900;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../../styles/general.css" />
+    <link rel="stylesheet" href="destination.css" />
+    <title>Moon Page</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__left">
+        <img class="logo" src="../../assets/shared/logo.svg" alt="" />
+      </div>
+
+      <div class="navigation__right nav-text">
+        <span class="navigation__line"></span>
+        <img
+          class="mobile-icon"
+          src="../../assets/shared/icon-hamburger.svg"
+          alt=""
+        />
+
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__item-link" href="../homepage/index.html"
+              ><span class="navigation__item-number">00</span> Home</a
+            >
+          </li>
+          <li class="navigation__item navigation__item--active">
+            <a
+              class="navigation__item-link"
+              href="../destination/destination-moon.html"
+              ><span class="navigation__item-number">01</span> Destination</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__item-link" href="../crew/crew-commander.html"
+              ><span class="navigation__item-number">02</span> Crew</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              class="navigation__item-link"
+              href="../technology/technology-vehicle.html"
+              ><span class="navigation__item-number">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <h5 class="page-title"><span>01</span> Pick your destination</h5>
+
+      <div class="content-container destination">
+        <div class="destination__image">
+          <img src="../../assets/destination/image-moon.png" alt="" />
+        </div>
+
+        <div class="destination__content">
+          <ul class="sub-nav__list nav-text">
+            <li class="sub-nav__item sub-nav__item--active">
+              <a
+                class="sub-nav__item-link"
+                href="../destination/destination-moon.html"
+              >
+                Moon</a
+              >
+            </li>
+            <li class="sub-nav__item">
+              <a
+                class="sub-nav__item-link"
+                href="../destination/destination-mars.html"
+                >Mars</a
+              >
+            </li>
+            <li class="sub-nav__item">
+              <a
+                class="sub-nav__item-link"
+                href="../destination/destination-europa.html"
+              >
+                Europa</a
+              >
+            </li>
+            <li class="sub-nav__item">
+              <a
+                class="sub-nav__item-link"
+                href="../destination/destination-titan.html"
+              >
+                Titan</a
+              >
+            </li>
+          </ul>
+          <h2 class="destination__title">Moon</h2>
+          <p class="destination__description description-paragraph">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <div class="destination__content-footer">
+            <div class="left-content">
+              <p class="sub-heading2">Avg. Distance</p>
+              <p class="sub-heading1">384,400 KM</p>
+            </div>
+
+            <div class="right-content">
+              <p class="sub-heading2">Est. Travel Time</p>
+              <p class="sub-heading1">3 Days</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

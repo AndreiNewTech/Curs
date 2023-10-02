@@ -1,0 +1,94 @@
+body {
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+}
+
+.page-title {
+  margin-bottom: 100px;
+}
+
+.sub-nav__list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.sub-nav__item {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.sub-nav__item-link:link, .sub-nav__item-link:visited {
+  color: #d0d6f9;
+}
+.sub-nav__item--active {
+  border-bottom: 2px solid white;
+}
+.sub-nav__item--active .sub-nav__item-link {
+  color: white;
+}
+.sub-nav__item:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+.sub-nav__item--active:hover {
+  border-bottom: 2px solid white;
+}
+
+.destination__title {
+  margin-bottom: 20px;
+}
+.destination__content {
+  max-width: 475px;
+}
+.destination__description {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 16px;
+}
+.destination__content-footer {
+  display: flex;
+}
+.destination__content-footer .left-content,
+.destination__content-footer .right-content {
+  width: 50%;
+}
+.destination__content-footer .sub-heading1 {
+  text-transform: uppercase;
+}
+.destination__content-footer .sub-heading2 {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+  }
+  .destination__content {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .content-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 0;
+  }
+  .sub-nav__list {
+    justify-content: center;
+  }
+  .destination__image {
+    margin-bottom: 80px;
+    width: 60%;
+  }
+  .destination__image img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  }
+  .destination__content-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .destination .left-content {
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=destination.css.map */

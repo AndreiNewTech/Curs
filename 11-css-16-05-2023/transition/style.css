@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+.transition-transform {
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.transition-transform div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.transition-transform div:nth-child(1) {
+  background-color: azure;
+  margin-bottom: 100px;
+  transition: transform 0.3s ease-out;
+}
+
+.transition-transform div:nth-child(1):hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.transition-transform div:nth-child(2) {
+  background-color: rgb(240, 255, 247);
+  margin-bottom: 50px;
+  transition: transform 2s ease-out;
+}
+
+.transition-transform div:nth-child(2):hover {
+  /* transform: rotate(360deg); */
+  /* transform: rotateY(360deg); */
+  transform: rotateX(360deg);
+}
+
+.transition-transform div:nth-child(3) {
+  background-color: rgb(242, 240, 255);
+  transition: transform 4s eas;
+}
+
+.transition-transform div:nth-child(3):hover {
+  transform: translate(100%, 50%);
+}
+
+.transition-transform div:nth-child(4) {
+  background-color: rgb(255, 240, 240);
+  transition: transform 2s ease-out;
+}
+
+.transition-transform div:nth-child(4):hover {
+  transform: skew(160deg);
+}
+
+.transition-transform div:nth-child(5) {
+  transition: transform 2s ease-out, background-color 1s ease-in;
+}
+
+.transition-transform div:nth-child(5):hover {
+  transform: rotateX(360deg) scale(1.5) translate(50px);
+  background-color: crimson;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  /* transition-property: width;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  transition-timing-function: ease-out;  */
+  transition: width 2s ease-in 1s, height 1s ease-in 1s,
+    background-color 0.5s ease-in;
+}
+
+.child:hover {
+  cursor: pointer;
+  background-color: red;
+  width: 500px;
+  height: 500px;
+  /* height: 200px; */
+}
+
+.child-2 {
+  display: inline-block;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  border: 1px solid black;
+  padding: 10px;
+  transition-property: color, font-size, border, box-shadow;
+  transition-duration: 1s;
+  /* font-weight: bold; */
+}
+
+.child-2:hover {
+  cursor: pointer;
+  color: firebrick;
+  font-size: 60px;
+  font-weight: 900;
+  border: 30px solid black;
+  border-radius: 20px;
+  /* outline: 10px solid yellow; */
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}

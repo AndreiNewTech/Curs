@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent-1,
+.parent-2,
+.parent-3,
+.parent-4,
+.parent-5 {
+  border: 1px solid black;
+  display: flex;
+  gap: 10px;
+}
+
+.parent-1,
+.parent-4 {
+  flex-direction: column;
+}
+
+.child-1 {
+  height: 70px;
+  padding: 10px;
+}
+
+/* Order -> aranjare crescatoare */
+.child-1:nth-child(1),
+.child-2:nth-child(1),
+.child-3:nth-child(1),
+.child-4:nth-child(1),
+.child-5:nth-child(1) {
+  background-color: coral;
+}
+
+.child-1:nth-child(1) {
+  order: 3;
+}
+
+.child-1:nth-child(2),
+.child-2:nth-child(2),
+.child-3:nth-child(2),
+.child-4:nth-child(2),
+.child-5:nth-child(2) {
+  background-color: rgb(214, 255, 80);
+}
+
+.child-1:nth-child(2) {
+  order: 2;
+}
+
+.child-1:nth-child(3),
+.child-2:nth-child(3),
+.child-3:nth-child(3),
+.child-4:nth-child(3),
+.child-5:nth-child(3) {
+  background-color: rgb(80, 217, 255);
+  order: 1;
+}
+
+.child-1:nth-child(3) {
+  order: 1;
+}
+
+.child-1:nth-child(4),
+.child-2:nth-child(4),
+.child-3:nth-child(4),
+.child-4:nth-child(4),
+.child-5:nth-child(4) {
+  background-color: #96a0fc;
+}
+
+.child-1:nth-child(5),
+.child-2:nth-child(5),
+.child-3:nth-child(5),
+.child-4:nth-child(5),
+.child-5:nth-child(5) {
+  background-color: #fc96c6;
+}
+
+/* Parent-2  */
+
+.parent-2 {
+  height: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px 10px;
+}
+
+.child-2 {
+  width: 100px;
+  height: 100px;
+}
+
+/* Oder default e 0, aranajare in ordinea cresatoare */
+
+.child-2:nth-child(1) {
+  order: 3;
+}
+
+.child-2:nth-child(2) {
+  order: 5;
+}
+
+.child-2:nth-child(3) {
+  order: 0;
+}
+
+.child-2:nth-child(4) {
+  order: -1;
+}
+
+.child-2:nth-child(5) {
+  order: 2;
+}
+
+/* Parent-3 */
+/* Flex grow default = 0 */
+
+.parent-3 {
+  margin-bottom: 100px;
+}
+
+.child-3 {
+  /* width: 50px; */
+  height: 60px;
+  flex-grow: 1;
+}
+
+.child-3:nth-child(1) {
+  flex-grow: 3;
+  flex-shrink: 5;
+  /* flex-shrink: 1;
+  flex-basis: auto; */
+}
+
+.child-3:nth-child(2) {
+  flex-grow: 1;
+}
+
+.child-3:nth-child(3) {
+  flex-grow: 3;
+}
+
+/* Parent-4 */
+.parent-4 {
+  margin-bottom: 100px;
+  height: 400px;
+  align-items: center;
+}
+
+.child-4 {
+  width: 50px;
+}
+
+.child-4:nth-child(1) {
+  flex-grow: 1;
+}
+
+.child-4:nth-child(4) {
+  flex-grow: 2;
+}
+
+/* Parent-5 */
+
+.parent-5 {
+  height: 200px;
+  max-width: 800px;
+  gap: 10px;
+}
+
+.child-5 {
+  /* width: 150px; */
+  flex-basis: 150px;
+  /* flex-grow: 1; */
+}
+
+.child-5:nth-child(1) {
+  flex-shrink: 2;
+}
+
+.child-5:nth-child(2) {
+  flex: 2 1 180px;
+}
+
+.child-5:nth-child(3) {
+  flex: 1 1 150px;
+}
+
+.child-5:nth-child(5) {
+  /* flex-grow: 0;
+  flex-shrink: 2;
+  flex-basis: 170px; */
+  /* shorthand - grow, shrink si basis */
+  flex: 0 2 180px;
+}
+
+/* 
+  Row
+  widht sau height
+  sau 
+  flex-basis + height
+
+
+  Column
+  width sau height
+  sau 
+  flex-basis + width
+*/

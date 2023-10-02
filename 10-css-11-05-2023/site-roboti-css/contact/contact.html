@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../home/style.css" />
+    <title>Contact-Robo Land</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="nav-container">
+        <div class="container nav-content">
+          <div class="logo-container">
+            <img
+              class="logo-image"
+              src="https://cdn-icons-png.flaticon.com/512/6134/6134346.png"
+              alt=""
+            />
+            <span class="logo-text">RoboL</span>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="../home/home.html">Home</a>
+            </li>
+            <li>
+              <a href="">Descriere</a>
+            </li>
+            <li>
+              <a href="">Produse</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container form-content">
+      <h1>Contact us</h1>
+      <form class="form-style">
+        <!-- nume prenume -->
+        <div class="text-size-18">
+          <label for="name" class="form-label">Nume si Prenume:</label>
+          <input
+            type="text"
+            name="name"
+            class="form-input text-size-18"
+            required
+          />
+        </div>
+        <!-- email -->
+        <div class="text-size-18">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="email"
+            name="email"
+            class="form-input text-size-18"
+            required
+          />
+        </div>
+        <!-- telefon -->
+        <div class="text-size-18">
+          <label for="phone" class="form-label">Telefon:</label>
+          <input
+            type="tel"
+            name="phone"
+            class="form-input text-size-18"
+            required
+          />
+        </div>
+        <!-- adresa de livrare-->
+        <div class="text-size-18">
+          <label for="address" class="form-label">Adresa de livrare:</label>
+          <input
+            type="text"
+            name="address"
+            class="form-input text-size-18"
+            required
+          />
+        </div>
+        <!-- data livrarii -->
+        <div class="text-size-18">
+          <label for="date" class="form-label">Data livrarii:</label>
+          <input
+            type="datetime-local"
+            name="date"
+            class="form-input text-size-18"
+            required
+          />
+        </div>
+        <!-- text area reclamatii/mentiuni comanda -->
+        <div>
+          <textarea
+            class="text-size-18"
+            placeholder="Detalii solicitare...."
+            cols="40"
+            rows="20"
+          ></textarea>
+        </div>
+
+        <!-- scopul mesajului -->
+        <div class="text-size-18">
+          <label for="scope" class="form-label">Scopul mesajului:</label>
+          <select class="form-options text-size-18" name="scope">
+            <option>Reclamatii</option>
+            <option selected>Comanda</option>
+            <option>Informatii</option>
+          </select>
+        </div>
+
+        <!-- butonul -->
+        <button class="form-button text-size-18">Trimite</button>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <div class="footer-left">
+        <div class="logo-container">
+          <img
+            class="logo-image"
+            src="https://cdn-icons-png.flaticon.com/512/6134/6134346.png"
+            alt="robostore"
+          />
+          <span class="logo-text">RoboL</span>
+        </div>
+        <p>S.R.L Robo Store, adresa Strada Aluminiu Nr 20. Brasov.</p>
+      </div>
+      <ul class="footer-right">
+        <li>
+          <a href="">Despre</a>
+        </li>
+        <li>
+          <a href=""> Termeni</a>
+        </li>
+        <li>
+          <a href="">Conditii</a>
+        </li>
+        <li>
+          <a href=""> Politica de Retur </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

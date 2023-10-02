@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.text-size-18 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  line-height: 60px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: blue;
+  text-decoration: none; /* no underline */
+}
+
+/* unvisited link */
+a:link {
+  color: #ff0000;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f48989;
+}
+
+/* selected link */
+a:active {
+  color: #0000ff;
+}
+
+/* Navigation */
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 8px;
+}
+
+.logo-image {
+  width: 70px;
+}
+
+.logo-text {
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Nav */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Fooer  */
+
+.page-footer {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.page-footer .logo-container {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  /* General */
+  .section-title {
+    text-align: center;
+  }
+
+  /* Navigation */
+  .logo-container {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-list li {
+    padding: 5px;
+  }
+  .nav-list li:first-child {
+    padding-top: 10px;
+  }
+
+  .nav-content {
+    margin: 0px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  .page-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

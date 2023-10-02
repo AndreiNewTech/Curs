@@ -1,0 +1,114 @@
+@import "../../styles/variables";
+
+.content-container {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  .homepage-content {
+    max-width: 458px;
+
+    &__title {
+      margin: 24px 0;
+      line-height: 1;
+    }
+    &__description {
+      line-height: 32px;
+    }
+  }
+
+  .homepage-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 274px;
+      height: 274px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      width: 450px;
+      height: 450px;
+    }
+
+    button {
+      width: 274px;
+      height: 274px;
+      border-radius: 50%;
+    }
+    h4 {
+      width: inherit;
+      height: inherit;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        color: $blue-dark;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 0;
+  }
+
+  .homepage-content {
+    text-align: center;
+  }
+
+  .homepage-content,
+  .homepage-button {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+  }
+
+  .content-container {
+    .homepage-button {
+      button {
+        width: 175px;
+        height: 175px;
+      }
+      &::before {
+        display: none;
+      }
+
+      h4 {
+        width: initial;
+        height: initial;
+      }
+      h4 a {
+        font-size: 24px;
+      }
+    }
+  }
+}

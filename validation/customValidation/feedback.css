@@ -1,0 +1,138 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+ .registration-form {
+  width: 300px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px #000;
+} 
+
+label,
+.radio-label {
+  display: block;
+  margin: 10px 0 5px;
+} 
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  width: auto;
+}
+
+.radio-label {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-top: 10px;
+}
+
+button {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* // Last 2 forms */
+.form {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+input,
+textarea,
+select,
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.gender-container {
+  display: flex;
+}
+
+#label-terms {
+  display: inline-block;
+}
+
+.terms-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-container input {
+  cursor: pointer;
+}
+
+.terms-input__container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.success-submission {
+  display: none;
+  text-align: center;
+  color: rgb(19, 135, 19);
+}
+
+.active {
+  display: block;
+}

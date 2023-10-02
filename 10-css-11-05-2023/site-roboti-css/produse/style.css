@@ -1,0 +1,76 @@
+/* Banner */
+
+.banner-container {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  margin-bottom: 70px;
+}
+
+.banner-container .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-title {
+  text-align: center;
+  font-family: "Slabo 27px", serif;
+  font-size: 60px;
+}
+
+.banner-subtitle {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+/* Products Table */
+
+.table-products {
+  margin: auto;
+  margin-bottom: 70px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.table-products img {
+  width: 100%;
+  max-width: 130px;
+}
+
+.table-products,
+.table-products td,
+.table-products th {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  padding: 16px;
+}
+
+.table-products thead tr {
+  background: linear-gradient(to left, #ec6f66, #f3a183);
+}
+
+.table-products tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.table-products a {
+  text-decoration: underline;
+  display: initial;
+  transition: all 0.1s ease;
+}
+
+.table-products a:hover {
+  display: inline-block;
+  transform: translateX(2px);
+  font-size: 18px;
+}
+
+.table-products tbody tr td:first-child {
+  font-weight: bold;
+}

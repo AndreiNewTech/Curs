@@ -1,0 +1,131 @@
+@import "../../styles/variables";
+body {
+  background-image: url("../../assets/technology/background-technology-desktop.jpg");
+}
+
+.page-title {
+  margin-bottom: 100px;
+}
+
+.technology {
+  &__image {
+    order: 2;
+    text-align: right;
+  }
+
+  &__image-landscape {
+    display: none;
+  }
+
+  &__content {
+    display: flex;
+    order: 1;
+    padding-top: 120px;
+    .aside-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      &__item {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-color: rgba(255, 255, 255, 0.4);
+        font-size: $size-lg;
+        color: $white;
+        text-align: center;
+        margin-right: 80px;
+        transition: border-color 0.3 ease-in;
+        cursor: pointer;
+        &:hover {
+          border-color: $white;
+        }
+        a {
+          width: inherit;
+          height: inherit;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &--active {
+          background-color: $white;
+          a {
+            color: $blue-dark;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("../../assets/technology/background-technology-tablet.jpg");
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 0;
+  }
+
+  .technology__image {
+    order: 1;
+    width: 100%;
+    width: calc(100vw + 3px);
+    position: relative;
+    left: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    &-landscape {
+      width: 100%;
+      display: initial;
+    }
+
+    &-portrait {
+      display: none;
+    }
+  }
+
+  .technology__content {
+    order: 2;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+
+    .aside-nav {
+      flex-direction: row;
+      justify-content: center;
+      &__item {
+        margin-right: 0;
+      }
+      margin-bottom: 80px;
+    }
+
+    padding: 70px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  }
+
+  .technology__content {
+    order: 2;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

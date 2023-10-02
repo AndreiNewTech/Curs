@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.articles {
+  margin-top: 100px;
+}
+
+.articles img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.articles article {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 49%;
+}
+
+.articles p {
+  font-size: 14px;
+  max-height: 90px;
+}
+
+.articles h2 {
+  text-align: center;
+}
+
+/* 
+    <!-- Block, inline-block, inline -->
+
+    <!-- display: block - div, section ,body, ul, table, li, etc -->
+    <!-- display: inline - a, input ,button, img -->
+    <!-- display: inline-block, grid, flexbox  adaugare manuala  -->
+
+*/
+
+.block-container {
+  width: 100%;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.block-container div {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 24.17%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.block-container2 {
+  /* display: none; */
+  margin-top: 10px;
+  border: 2px dotted gray;
+  margin-bottom: 100px;
+}
+
+.block-container2 div {
+  border: 1px dotted red;
+  display: inline-block;
+}
+
+.block-1 {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.block-2 {
+  width: 100px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.block-3 {
+  width: 170px;
+  height: 80px;
+}
+
+/* <!-- Max width, min-width, overflow --> */
+
+.block-container3 {
+  display: block;
+  border: 1px solid black;
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.block-container3 h3 {
+  display: inline-block;
+  border: 1px solid black;
+  max-width: 150px;
+  text-align: center;
+}
+
+.block-container3 .first-paragraph {
+  display: inline-block;
+  height: 100px;
+  min-width: 50px;
+  margin: 0;
+  border: 1px solid black;
+  text-align: center;
+  /* overflow: hidden; */
+  /* overflow-y: scroll; */
+  overflow: auto;
+}
+
+.block-container3 .second-paragraph {
+  border: 1px solid black;
+  display: inline-block;
+  min-width: 260px;
+  /* visibility: hidden; */
+  /* display: none; */
+  text-align: center;
+}
+
+.mj-image {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+}
+

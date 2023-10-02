@@ -1,0 +1,43 @@
+@use "general";
+@import "colors";
+@import "mixins";
+
+.generic-button {
+  background: none;
+  border: 1px solid black;
+  padding: 16px;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $gray-dark;
+  padding: 10px;
+  border-radius: 10px;
+
+  &__title {
+    margin-bottom: 0;
+    text-align: center;
+    color: $gray-light;
+  }
+
+  &__content {
+    border-bottom: 1px solid $gray-dark;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    @include card-text($font-size: 24px);
+  }
+
+  &__author {
+    @include card-text($text-color: $pink-color);
+    font-style: italic;
+  }
+
+  &__button {
+    @extend .generic-button;
+    color: red;
+  }
+}
