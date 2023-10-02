@@ -32,8 +32,6 @@ input:not(:focus):not(:placeholder-shown):valid {
 }
 
 
-
-
 label {
   display: block;
 }
