@@ -5,6 +5,13 @@ body {
   padding: 0;
 }
 
+small {
+  color: red;
+}
+
+h2 {
+  text-align: center;
+}
  .registration-form {
   width: 300px;
   margin: 30px auto;
@@ -28,7 +35,7 @@ input[type="password"],
 select,
 textarea {
   padding: 10px;
-  margin-bottom: 20px;
+
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
@@ -36,6 +43,10 @@ textarea {
 input[type="radio"] {
   display: inline-block;
   width: auto;
+}
+
+.container {
+  margin-bottom: 20px;
 }
 
 .radio-label {
@@ -135,4 +146,12 @@ button:hover {
 
 .active {
   display: block;
+}
+
+.container .invalid {
+  border-color: red;
+}
+
+#addData {
+  background-color: #218838;
 }

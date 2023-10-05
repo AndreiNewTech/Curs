@@ -7,34 +7,57 @@
   <link rel="stylesheet" href="./feedback.css">
 </head>
 <body>
-  <form id="feedbackForm" class="form">
-    <label for="feedbackName">Name:</label>
-    <input type="text" id="feedbackName" name="feedbackName"  />
 
-    <label for="feedbackPhone">Phone:</label>
-    <input type="tel" id="feedbackPhone" name="feedbackPhone"  />
+  <h2>Feedback Form</h2>
+  <form id="feedbackForm" class="form" novalidate>
+    <div class="container">
+      <label for="feedbackName">Name:</label>
+      <input type="text" id="feedbackName" name="feedbackName"  />
+      <small id="feedbackNameWarning" class="warning"></small>
+    </div>
 
-    <label for="feedbackDate">Date Of Service:</label>
-    <input type="date" id="feedbackEmail" name="feedbackDate"  />
+    <div class="container">
+      <label for="feedbackPhone">Phone:</label>
+      <input type="tel" id="feedbackPhone" name="feedbackPhone"  />
+      <small id="feedbackPhoneWarning" class="warning"></small> 
+    </div>
+ 
+    <div class="container">
+      <label for="feedbackDate">Date Of Service:</label>
+      <input type="date" id="feedbackDate" name="feedbackDate"  />
+      <small id="feedbackDateWarning" class="warning"></small>
+    </div>
 
-    <label for="feedbackEmail">Email:</label>
-    <input type="email" id="feedbackEmail" name="feedbackEmail"  />
+    <div class="container">
+      <label for="feedbackEmail">Email:</label>
+      <input type="email" id="feedbackEmail" name="feedbackEmail"  />
+      <small id="feedbackEmailWarning" class="warning"></small>
+    </div>
 
-    <label for="feedback">Feedback:</label>
-    <textarea id="feedback" name="feedback" rows="4" ></textarea>
+    <div class="container">
+      <label for="feedbackDescription">Feedback:</label>
+      <textarea id="feedbackDescription" name="feedbackDescription" rows="4" ></textarea>
+      <small id="feedbackDescriptionWarning" class="warning"></small>
+    </div>
 
-    <label for="rating">Rating:</label>
-    <select id="rating" name="rating" >
-      <option value="">Select Rating</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
+
+    <div class="container">
+      <label for="feedbackRating">Rating:</label>
+      <select id="feedbackRating" name="feedbackRating" >
+        <option value="">Select Rating</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <small id="feedbackRatingWarning" class="warning"></small>
+    </div>
 
     <button type="submit">Submit Feedback</button>
   </form>
+
+  <button id="addData">Add Data</button>
   <script src="./feedback.js"></script>
 </body>
 </html>
