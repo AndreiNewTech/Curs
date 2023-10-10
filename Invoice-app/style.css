@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background-color: "white";
+  border: none;
+  cursor: pointer;
+}
+
+#user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+
+input {
+  height: 26px;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+/* Only show invalid ring while not focused */
+input:not(:focus):not(:-moz-placeholder-shown):invalid {
+  border-color: red;
+}
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+/* Only show valid ring while not focused and if a value is entered */
+/* :empty won't work here as that targets elements that have no childeren. Therefore we abuse :placeholder-shown */
+input:not(:focus):not(:-moz-placeholder-shown):valid {
+  border-color: green;
+}
+input:not(:focus):not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+label {
+  display: block;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  height: 30px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-link {
+  margin-top: 10px;
+  width: 300px;
+  text-align: right;
+}
+
+.nav-user {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}/*# sourceMappingURL=style.css.map */
