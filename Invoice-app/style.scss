@@ -76,9 +76,9 @@ button:hover {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
 
 .login-link {
@@ -87,8 +87,31 @@ button:hover {
   text-align: right ;
 }
 
-.nav-user {
+.nav-username {
   display: flex;
-    gap: 20px;
-    justify-content: flex-end;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  background: darkseagreen;
+  padding: 20px;
+
+  li,a  {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+// Formular factura
+
+.creeare-factura {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }

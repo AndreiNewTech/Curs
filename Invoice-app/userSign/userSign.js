@@ -19,13 +19,13 @@ formEl.addEventListener('submit', (e) => {
   if (pageTitle === 'Login') {
     if (registeredUser) {
       localStorage.setItem('user', JSON.stringify([registeredUser]));
-      console.log('user Logged');
-      // console.log();
-      window.location.href = './index.html';
+      console.log('user Loggedd');
+      window.location.href = '../index.html';
     } else {
       console.log('Not found')
     }
   } 
+
 
   if (pageTitle === 'Register') {
     if (registeredUser) {
@@ -34,7 +34,7 @@ formEl.addEventListener('submit', (e) => {
         // Register user
         const updatedStorageUsers = [...storageUsers, userData];
         localStorage.setItem('users', JSON.stringify(updatedStorageUsers));
-        window.location.href = './login.html';
+        window.location.href = '../login.html';
         console.log('User added');
     }
   }

@@ -8,18 +8,107 @@
 </head>
 <body>
   <nav>
-    <ul>
+    <ul class="navigation-list">
       <li>
-        <p class="nav-user"></p>
+        <p class="nav-username"></p>
       </li>
       <li>
-        <a href="">
+        <a class="nav-logout"  href="#">
           Logout
         </a>
       </li>
     </ul>
   </nav>
-  <h1>Invoice App</h1>
-  <script src="./app.js"></script>
+
+
+  <form class="creeare-factura" action="">
+    <h3>Facturare de la</h3>
+    <div class="container">
+      <label for="adresa">Adresa</label>
+      <input type="text" name="adresa" id="adresa">
+    </div>
+
+    <div class="container">
+      <div class="subcontainer">
+        <label for="oras">Oras</label>
+        <input type="text" name="oras" id="oras">
+      </div>
+      <div class="subcontainer">
+        <label for="codpostal">Cod Postal</label>
+        <input type="text" name="codpostal" id="codpostal">
+      </div>
+      <div class="subcontainer">
+        <label for="tara">Tara</label>
+        <input type="text" name="tara" id="tara">
+      </div>
+    </div>
+
+    <h3>Facturare catre</h3>
+    <div class="container">
+      <label for="nume">Nume</label>
+      <input type="text" name="nume" id="nume">
+    </div>
+
+    <div class="container">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <div class="container">
+      <div class="subcontainer">
+        <label for="adresa-client">Adresa Client</label>
+        <input type="text" name="adresa-client" id="adresa-client">
+      </div>
+      <div class="subcontainer">
+        <label for="oras-client">Oras</label>
+        <input type="text" name="oras-client" id="oras-client">
+      </div>
+      <div class="subcontainer">
+        <label for="codpostal-client">Cod Postal</label>
+        <input type="text" name="codpostal-client" id="codpostal-client">
+      </div>
+      <div class="subcontainer">
+        <label for="tara-client">Tara</label>
+        <input type="text" name="tara-client" id="tara-client">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="subcontainer">
+        <label for="date">Data Factura</label>
+        <input type="date" name="date" id="date">
+      </div>
+      <div class="subcontainer">
+        <label for="termene">Termene de plata</label>
+        <select name="termene" id="termene">
+          <option value="30Zile">30 De Zile</option>
+          <option value="60Zile">60 De Zile</option>
+          <option value="90Zile">90 De Zile</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="container">
+      <label for="descriere">Proiect Descriere</label>
+      <input type="text" name="descriere" id="descriere">
+    </div>
+
+
+    <div class="unitati">
+    </div>
+
+
+    <div class="container">
+      <button>
+        Cancel
+      </button>
+      <button>
+        Save Changes
+      </button>
+    </div>
+
+  </form>
+
+  <script src="./app.js" type="module"></script>
 </body>
 </html>
