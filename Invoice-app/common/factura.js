@@ -68,6 +68,8 @@ class DetaliiClient {
 class Factura {
   // Builder pattern
   constructor() {
+    this.userId = ''
+
     this.idFactura = '' // sa persiste numarul faacturii prin localStorage;
     // user details
     this.userAddress = null;
@@ -113,6 +115,11 @@ class Factura {
 
   withUnitatiFactura(unitatiFactura) {
     this.unitatiFactura = unitatiFactura;
+    return this;
+  }
+
+  withUserId(userId) {
+    this.userId = userId;
     return this;
   }
 }

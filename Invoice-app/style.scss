@@ -6,6 +6,10 @@ body {
   box-sizing: border-box;
 }
 
+h3 {
+  text-align: center;
+}
+
 ol,
 ul,
 p {
@@ -39,6 +43,7 @@ input {
   height: 26px;
   font-size: 20px;
   border: 2px solid black;
+  width: 100%;
 }
 
 
@@ -76,6 +81,7 @@ button:hover {
 }
 
 .container {
+  width: 100%;
   // display: flex;
   // flex-direction: column;
   // align-items: center;
@@ -115,3 +121,13 @@ button:hover {
   align-items: center;
   margin: 0 auto;
 }
+
+.unitati {
+  .subcontainer {
+    display: flex;
+    gap: 10px;
+  }
+
+  margin-bottom: 80px;
+}
+
